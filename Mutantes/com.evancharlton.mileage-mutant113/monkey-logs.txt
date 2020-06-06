@@ -1,0 +1,62 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591365564381 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(514.0,434.0)
+:Sending Touch (ACTION_UP): 0:(449.17197,449.76794)
+:Sending Touch (ACTION_DOWN): 0:(803.0,756.0)
+:Sending Touch (ACTION_UP): 0:(797.29736,776.0521)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(706.0,1845.0)
+:Sending Touch (ACTION_UP): 0:(695.544,1815.8644)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(1058.0,876.0)
+:Sending Touch (ACTION_UP): 0:(1024.4639,847.2998)
+:Sending Touch (ACTION_DOWN): 0:(490.0,1713.0)
+:Sending Touch (ACTION_UP): 0:(479.86298,1705.1298)
+:Sending Touch (ACTION_DOWN): 0:(80.0,220.0)
+:Sending Touch (ACTION_UP): 0:(78.57458,219.8131)
+:Sending Touch (ACTION_DOWN): 0:(531.0,1975.0)
+:Sending Touch (ACTION_UP): 0:(532.9207,1965.1605)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(699.0,981.0)
+:Sending Touch (ACTION_UP): 0:(700.9893,981.14557)
+:Sending Touch (ACTION_DOWN): 0:(6.0,679.0)
+:Sending Touch (ACTION_UP): 0:(100.5975,808.21515)
+:Sending Touch (ACTION_DOWN): 0:(654.0,175.0)
+:Sending Touch (ACTION_UP): 0:(581.38556,171.69948)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+    //[calendar_time:2020-06-05 05:48:17.531  system_uptime:15629700]
+    // Sending event #100
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.charts.AverageFuelEconomyChart } in package com.evancharlton.mileage
+** Monkey aborted due to error.
+Events injected: 112
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=1867ms (0ms mobile, 0ms wifi, 1867ms not connected)

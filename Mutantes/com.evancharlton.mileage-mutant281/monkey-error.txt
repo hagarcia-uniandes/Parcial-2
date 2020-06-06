@@ -1,0 +1,30 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 4298)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.NullPointerException
+// 	at java.io.File.<init>(File.java:282)
+// 	at com.evancharlton.mileage.util.Util.getExternalFolder(Util.java:22)
+// 	at com.evancharlton.mileage.services.AutomaticBackupService.onHandleIntent(AutomaticBackupService.java:49)
+// 	at android.app.IntentService$ServiceHandler.handleMessage(IntentService.java:76)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.os.HandlerThread.run(HandlerThread.java:65)
+// 
+** System appears to have crashed at event 72 of 1000000 using seed 1591545233776

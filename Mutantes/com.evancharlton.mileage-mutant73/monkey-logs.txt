@@ -1,0 +1,83 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591507714872 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.google.android.dialer/.extensions.GoogleDialtactsActivity } in package com.google.android.dialer
+:Sending Touch (ACTION_DOWN): 0:(26.0,638.0)
+:Sending Touch (ACTION_UP): 0:(21.320772,611.9575)
+:Sending Touch (ACTION_DOWN): 0:(11.0,278.0)
+:Sending Touch (ACTION_UP): 0:(14.469113,295.149)
+:Sending Touch (ACTION_DOWN): 0:(693.0,266.0)
+:Sending Touch (ACTION_UP): 0:(671.81757,268.23523)
+:Sending Flip keyboardOpen=false
+:Sending Touch (ACTION_DOWN): 0:(513.0,331.0)
+:Sending Touch (ACTION_UP): 0:(521.8095,331.02078)
+:Sending Touch (ACTION_DOWN): 0:(464.0,1453.0)
+:Sending Touch (ACTION_UP): 0:(467.52475,1426.6145)
+:Sending Touch (ACTION_DOWN): 0:(88.0,1206.0)
+:Sending Touch (ACTION_UP): 0:(158.08246,1315.1729)
+:Sending Touch (ACTION_DOWN): 0:(752.0,342.0)
+:Sending Touch (ACTION_UP): 0:(748.39307,339.951)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(542.0,784.0)
+:Sending Touch (ACTION_UP): 0:(595.2192,794.0088)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-4.0)
+    //[calendar_time:2020-06-05 03:57:17.826  system_uptime:8969994]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(970.0,2051.0)
+:Sending Touch (ACTION_UP): 0:(973.78625,2049.4744)
+:Sending Touch (ACTION_DOWN): 0:(966.0,1742.0)
+:Sending Touch (ACTION_UP): 0:(971.88837,1734.8248)
+:Sending Touch (ACTION_DOWN): 0:(630.0,6.0)
+:Sending Touch (ACTION_UP): 0:(629.7843,13.121269)
+:Sending Touch (ACTION_DOWN): 0:(416.0,1464.0)
+:Sending Touch (ACTION_UP): 0:(405.33246,1511.1592)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(142.0,565.0)
+:Sending Touch (ACTION_UP): 0:(87.85449,604.68634)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(796.0,1969.0)
+:Sending Touch (ACTION_UP): 0:(831.40625,1996.4849)
+:Sending Touch (ACTION_DOWN): 0:(148.0,4.0)
+:Sending Touch (ACTION_UP): 0:(150.24324,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(561.0,1123.0)
+:Sending Touch (ACTION_UP): 0:(558.4202,1120.9452)
+    //[calendar_time:2020-06-05 03:57:18.581  system_uptime:8970750]
+    // Sending event #200
+:Sending Flip keyboardOpen=true
+:Sending Touch (ACTION_DOWN): 0:(328.0,952.0)
+:Sending Touch (ACTION_UP): 0:(326.02383,950.26685)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.FieldListActivity } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+** Monkey aborted due to error.
+Events injected: 225
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=2704ms (0ms mobile, 0ms wifi, 2704ms not connected)

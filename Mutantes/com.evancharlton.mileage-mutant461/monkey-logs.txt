@@ -1,0 +1,86 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591416618289 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(715.0,144.0)
+:Sending Touch (ACTION_UP): 0:(718.48834,139.16394)
+:Sending Flip keyboardOpen=false
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=content://com.android.calendar/time/1591396002828 cmp=com.google.android.calendar/com.android.calendar.AllInOneActivity } in package com.google.android.calendar
+:Sending Touch (ACTION_DOWN): 0:(144.0,1016.0)
+:Sending Touch (ACTION_UP): 0:(192.37877,955.83923)
+:Sending Touch (ACTION_DOWN): 0:(734.0,1118.0)
+:Sending Touch (ACTION_UP): 0:(726.1538,1100.6112)
+:Sending Touch (ACTION_DOWN): 0:(425.0,988.0)
+:Sending Touch (ACTION_UP): 0:(476.001,1017.4523)
+:Sending Touch (ACTION_DOWN): 0:(802.0,1363.0)
+:Sending Touch (ACTION_UP): 0:(726.41583,1408.1897)
+:Sending Touch (ACTION_DOWN): 0:(126.0,595.0)
+:Sending Touch (ACTION_UP): 0:(116.55279,593.7579)
+:Sending Touch (ACTION_DOWN): 0:(364.0,673.0)
+:Sending Touch (ACTION_UP): 0:(363.99902,673.3216)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Flip keyboardOpen=true
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-5.0)
+    //[calendar_time:2020-06-05 22:26:44.056  system_uptime:25556703]
+    // Sending event #100
+    //[calendar_time:2020-06-05 22:26:44.057  system_uptime:25556704]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(408.0,1188.0)
+:Sending Touch (ACTION_UP): 0:(417.19073,1241.4303)
+:Sending Touch (ACTION_DOWN): 0:(481.0,434.0)
+:Sending Touch (ACTION_UP): 0:(477.94415,440.4199)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1067.0,138.0)
+:Sending Touch (ACTION_UP): 0:(1064.9413,144.86554)
+:Sending Touch (ACTION_DOWN): 0:(554.0,254.0)
+:Sending Touch (ACTION_UP): 0:(549.0516,252.20663)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ImportExportActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(625.0,171.0)
+:Sending Touch (ACTION_UP): 0:(622.0093,159.2521)
+    // Rejecting start of Intent { act=com.android.intent.action.SHOW_BRIGHTNESS_DIALOG cmp=com.android.systemui/.settings.BrightnessDialog } in package com.android.systemui
+:Sending Touch (ACTION_DOWN): 0:(791.0,235.0)
+:Sending Touch (ACTION_UP): 0:(779.5842,243.33897)
+:Sending Touch (ACTION_DOWN): 0:(341.0,1066.0)
+:Sending Touch (ACTION_UP): 0:(380.96927,1052.0975)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,2.0)
+    //[calendar_time:2020-06-05 22:26:44.965  system_uptime:25557612]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(659.0,1614.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ImportActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_UP): 0:(658.0105,1612.4282)
+:Sending Touch (ACTION_DOWN): 0:(37.0,1912.0)
+:Sending Touch (ACTION_UP): 0:(0.0,1963.3313)
+:Sending Flip keyboardOpen=false
+:Sending Touch (ACTION_DOWN): 0:(785.0,2057.0)
+:Sending Touch (ACTION_UP): 0:(781.14435,2070.2253)
+** Monkey aborted due to error.
+Events injected: 229
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=2576ms (0ms mobile, 0ms wifi, 2576ms not connected)

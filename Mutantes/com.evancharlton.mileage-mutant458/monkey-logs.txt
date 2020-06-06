@@ -1,0 +1,672 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591460225899 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(685.0,1925.0)
+:Sending Touch (ACTION_UP): 0:(660.55365,1848.9906)
+:Sending Touch (ACTION_DOWN): 0:(791.0,1017.0)
+:Sending Touch (ACTION_UP): 0:(793.9464,1030.2847)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(975.0,857.0)
+:Sending Touch (ACTION_UP): 0:(1075.9065,862.4839)
+:Sending Touch (ACTION_DOWN): 0:(790.0,1244.0)
+:Sending Touch (ACTION_UP): 0:(761.2189,1192.0774)
+:Sending Touch (ACTION_DOWN): 0:(685.0,1626.0)
+:Sending Touch (ACTION_UP): 0:(686.53674,1624.2266)
+:Sending Touch (ACTION_DOWN): 0:(291.0,1680.0)
+:Sending Touch (ACTION_UP): 0:(309.84937,1678.2651)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+    //[calendar_time:2020-06-05 22:20:50.820  system_uptime:25203467]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(535.0,470.0)
+:Sending Touch (ACTION_UP): 0:(537.87836,474.57913)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(597.0,2048.0)
+:Sending Touch (ACTION_UP): 0:(594.50366,2056.8455)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(409.0,669.0)
+:Sending Touch (ACTION_UP): 0:(401.19214,672.96954)
+:Sending Touch (ACTION_DOWN): 0:(1071.0,1378.0)
+:Sending Touch (ACTION_UP): 0:(1076.1128,1358.9155)
+:Sending Touch (ACTION_DOWN): 0:(1059.0,2007.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.FieldListActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_UP): 0:(1075.6833,1991.7742)
+    // Injection Failed
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(247.0,435.0)
+:Sending Touch (ACTION_UP): 0:(282.92502,396.68896)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,2.0)
+    //[calendar_time:2020-06-05 22:20:51.588  system_uptime:25204235]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(803.0,1162.0)
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(893.11163,1112.9648)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(569.0,1653.0)
+:Sending Touch (ACTION_UP): 0:(558.04083,1654.1157)
+:Sending Touch (ACTION_DOWN): 0:(564.0,972.0)
+:Sending Touch (ACTION_UP): 0:(563.1045,970.6871)
+:Sending Touch (ACTION_DOWN): 0:(877.0,2056.0)
+:Sending Touch (ACTION_UP): 0:(841.426,2082.7888)
+:Sending Touch (ACTION_DOWN): 0:(615.0,1210.0)
+:Sending Touch (ACTION_UP): 0:(632.944,1211.74)
+:Sending Touch (ACTION_DOWN): 0:(490.0,7.0)
+:Sending Touch (ACTION_UP): 0:(507.7695,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(727.0,1129.0)
+:Sending Touch (ACTION_UP): 0:(722.3516,1148.1526)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-5.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.FieldActivity } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+    //[calendar_time:2020-06-05 22:20:52.251  system_uptime:25204898]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(883.0,558.0)
+:Sending Touch (ACTION_UP): 0:(893.56177,576.0503)
+:Sending Touch (ACTION_DOWN): 0:(862.0,1178.0)
+:Sending Touch (ACTION_UP): 0:(854.8072,1176.2562)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(568.0,500.0)
+:Sending Touch (ACTION_UP): 0:(571.16437,539.9648)
+:Sending Touch (ACTION_DOWN): 0:(43.0,1406.0)
+:Sending Touch (ACTION_UP): 0:(17.548609,1358.3641)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(975.0,702.0)
+:Sending Touch (ACTION_UP): 0:(982.7548,701.1811)
+:Sending Touch (ACTION_DOWN): 0:(860.0,960.0)
+:Sending Touch (ACTION_UP): 0:(858.21014,953.81024)
+:Sending Touch (ACTION_DOWN): 0:(638.0,492.0)
+:Sending Touch (ACTION_UP): 0:(626.37537,541.2861)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+    //[calendar_time:2020-06-05 22:20:53.161  system_uptime:25205808]
+    // Sending event #400
+:Sending Touch (ACTION_DOWN): 0:(207.0,1408.0)
+:Sending Touch (ACTION_UP): 0:(201.99727,1422.6921)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(224.0,1896.0)
+:Sending Touch (ACTION_UP): 0:(225.92738,1900.2689)
+:Sending Touch (ACTION_DOWN): 0:(472.0,214.0)
+:Sending Touch (ACTION_UP): 0:(473.473,211.22308)
+:Sending Touch (ACTION_DOWN): 0:(329.0,1052.0)
+:Sending Touch (ACTION_UP): 0:(325.76624,1055.457)
+:Sending Touch (ACTION_DOWN): 0:(620.0,895.0)
+:Sending Touch (ACTION_UP): 0:(692.5959,953.1469)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(869.0,1024.0)
+:Sending Touch (ACTION_UP): 0:(883.6816,1025.7905)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(1016.0,1955.0)
+:Sending Touch (ACTION_UP): 0:(1012.26306,1979.3988)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(26.0,1663.0)
+:Sending Touch (ACTION_UP): 0:(0.0,1596.4086)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+    //[calendar_time:2020-06-05 22:20:53.792  system_uptime:25206439]
+    // Sending event #500
+:Sending Trackball (ACTION_MOVE): 0:(2.0,1.0)
+    // activityResuming(com.evancharlton.mileage)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(117.0,190.0)
+:Sending Touch (ACTION_UP): 0:(106.182976,185.72554)
+:Sending Touch (ACTION_DOWN): 0:(136.0,2003.0)
+:Sending Touch (ACTION_UP): 0:(121.50212,2003.8722)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(368.0,1726.0)
+:Sending Touch (ACTION_UP): 0:(362.69925,1722.2961)
+:Sending Touch (ACTION_DOWN): 0:(989.0,1049.0)
+:Sending Touch (ACTION_UP): 0:(1068.3105,1116.167)
+:Sending Touch (ACTION_DOWN): 0:(337.0,1441.0)
+    //[calendar_time:2020-06-05 22:20:54.498  system_uptime:25207144]
+    // Sending event #600
+:Sending Touch (ACTION_UP): 0:(301.57098,1438.1211)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.FieldActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(706.0,1933.0)
+:Sending Touch (ACTION_UP): 0:(681.4726,1914.9154)
+:Sending Touch (ACTION_DOWN): 0:(215.0,146.0)
+:Sending Touch (ACTION_UP): 0:(190.74512,159.19206)
+:Sending Touch (ACTION_DOWN): 0:(329.0,331.0)
+:Sending Touch (ACTION_UP): 0:(332.1997,333.07898)
+:Sending Touch (ACTION_DOWN): 0:(692.0,1232.0)
+:Sending Touch (ACTION_UP): 0:(687.4628,1226.3282)
+:Sending Touch (ACTION_DOWN): 0:(637.0,1344.0)
+:Sending Touch (ACTION_UP): 0:(589.8395,1479.9763)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(908.0,145.0)
+:Sending Touch (ACTION_UP): 0:(897.5618,144.26613)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(1070.0,1097.0)
+:Sending Touch (ACTION_UP): 0:(1076.3837,1106.385)
+    //[calendar_time:2020-06-05 22:20:55.718  system_uptime:25208365]
+    // Sending event #700
+:Sending Touch (ACTION_DOWN): 0:(177.0,1058.0)
+:Sending Touch (ACTION_UP): 0:(151.89874,982.27405)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(291.0,1038.0)
+:Sending Touch (ACTION_UP): 0:(282.80713,1040.52)
+:Sending Touch (ACTION_DOWN): 0:(140.0,900.0)
+:Sending Touch (ACTION_UP): 0:(139.26962,900.8359)
+:Sending Touch (ACTION_DOWN): 0:(844.0,845.0)
+:Sending Touch (ACTION_UP): 0:(847.663,849.6564)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(855.0,478.0)
+:Sending Touch (ACTION_UP): 0:(850.7487,490.3069)
+:Sending Touch (ACTION_DOWN): 0:(873.0,746.0)
+:Sending Touch (ACTION_UP): 0:(965.1065,788.38776)
+:Sending Touch (ACTION_DOWN): 0:(435.0,1949.0)
+:Sending Touch (ACTION_UP): 0:(448.58054,1932.6506)
+:Sending Touch (ACTION_DOWN): 0:(1046.0,1098.0)
+:Sending Touch (ACTION_UP): 0:(1044.9314,1091.2698)
+:Sending Touch (ACTION_DOWN): 0:(377.0,483.0)
+:Sending Touch (ACTION_UP): 0:(373.74014,487.32422)
+:Sending Touch (ACTION_DOWN): 0:(888.0,1167.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(812.7151,1150.0428)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(549.0,83.0)
+:Sending Touch (ACTION_UP): 0:(544.85986,72.93669)
+    //[calendar_time:2020-06-05 22:20:56.240  system_uptime:25208886]
+    // Sending event #800
+    //[calendar_time:2020-06-05 22:20:56.240  system_uptime:25208887]
+    // Sending event #800
+:Sending Touch (ACTION_DOWN): 0:(1041.0,144.0)
+:Sending Touch (ACTION_UP): 0:(1047.4167,196.4312)
+:Sending Touch (ACTION_DOWN): 0:(86.0,1344.0)
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+    // Injection Failed
+:Sending Touch (ACTION_UP): 0:(57.251442,1284.1201)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(502.0,967.0)
+:Sending Touch (ACTION_UP): 0:(509.9145,970.9057)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1067.0,1602.0)
+:Sending Touch (ACTION_UP): 0:(927.6782,1540.952)
+:Sending Touch (ACTION_DOWN): 0:(1004.0,859.0)
+:Sending Touch (ACTION_UP): 0:(1008.5279,861.45905)
+:Sending Touch (ACTION_DOWN): 0:(130.0,324.0)
+:Sending Touch (ACTION_UP): 0:(146.91354,329.35175)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(117.0,1703.0)
+:Sending Touch (ACTION_UP): 0:(109.74014,1760.9459)
+    //[calendar_time:2020-06-05 22:20:56.688  system_uptime:25209334]
+    // Sending event #900
+:Sending Flip keyboardOpen=false
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(214.0,796.0)
+:Sending Touch (ACTION_UP): 0:(209.70862,797.97644)
+:Sending Touch (ACTION_DOWN): 0:(333.0,123.0)
+:Sending Touch (ACTION_UP): 0:(332.77698,124.64888)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(752.0,1480.0)
+:Sending Touch (ACTION_UP): 0:(751.72125,1480.2483)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(560.0,1864.0)
+:Sending Touch (ACTION_UP): 0:(562.7817,1865.1725)
+:Sending Touch (ACTION_DOWN): 0:(845.0,311.0)
+:Sending Touch (ACTION_UP): 0:(899.03687,300.5437)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+    //[calendar_time:2020-06-05 22:20:57.420  system_uptime:25210067]
+    // Sending event #1000
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(84.0,888.0)
+:Sending Touch (ACTION_UP): 0:(88.57025,885.8837)
+:Sending Touch (ACTION_DOWN): 0:(475.0,1374.0)
+:Sending Touch (ACTION_UP): 0:(491.8363,1373.166)
+:Sending Touch (ACTION_DOWN): 0:(534.0,1438.0)
+:Sending Touch (ACTION_UP): 0:(535.5186,1425.4606)
+:Sending Touch (ACTION_DOWN): 0:(247.0,1592.0)
+:Sending Touch (ACTION_UP): 0:(245.44397,1593.9849)
+:Sending Touch (ACTION_DOWN): 0:(717.0,1212.0)
+:Sending Touch (ACTION_UP): 0:(716.8542,1214.2185)
+:Sending Touch (ACTION_DOWN): 0:(730.0,1350.0)
+:Sending Touch (ACTION_UP): 0:(723.99927,1354.6552)
+:Sending Touch (ACTION_DOWN): 0:(849.0,1106.0)
+:Sending Touch (ACTION_UP): 0:(845.5357,1108.4009)
+:Sending Touch (ACTION_DOWN): 0:(777.0,1492.0)
+:Sending Touch (ACTION_UP): 0:(780.1863,1498.2753)
+:Sending Touch (ACTION_DOWN): 0:(328.0,1217.0)
+:Sending Touch (ACTION_UP): 0:(326.7318,1214.7217)
+:Sending Touch (ACTION_DOWN): 0:(1067.0,1431.0)
+:Sending Touch (ACTION_UP): 0:(1078.5654,1424.3341)
+:Sending Touch (ACTION_DOWN): 0:(199.0,105.0)
+:Sending Touch (ACTION_UP): 0:(123.78957,141.57687)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-2.0)
+    //[calendar_time:2020-06-05 22:20:57.920  system_uptime:25210567]
+    // Sending event #1100
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Flip keyboardOpen=true
+:Sending Touch (ACTION_DOWN): 0:(1035.0,248.0)
+:Sending Touch (ACTION_UP): 0:(978.2683,215.40703)
+:Sending Touch (ACTION_DOWN): 0:(33.0,1743.0)
+:Sending Touch (ACTION_UP): 0:(36.844418,1743.3334)
+:Sending Touch (ACTION_DOWN): 0:(488.0,292.0)
+:Sending Touch (ACTION_UP): 0:(477.9627,313.92172)
+:Sending Touch (ACTION_DOWN): 0:(317.0,1621.0)
+:Sending Touch (ACTION_UP): 0:(313.61774,1618.5398)
+:Sending Touch (ACTION_DOWN): 0:(979.0,1084.0)
+:Sending Touch (ACTION_UP): 0:(972.5837,1077.928)
+:Sending Touch (ACTION_DOWN): 0:(664.0,457.0)
+:Sending Touch (ACTION_UP): 0:(732.36993,391.4806)
+:Sending Touch (ACTION_DOWN): 0:(1005.0,952.0)
+:Sending Touch (ACTION_UP): 0:(1001.72394,959.39233)
+:Sending Touch (ACTION_DOWN): 0:(627.0,1064.0)
+:Sending Touch (ACTION_UP): 0:(622.83057,1067.2238)
+:Sending Flip keyboardOpen=false
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(811.0,1239.0)
+:Sending Touch (ACTION_UP): 0:(787.065,1225.8226)
+:Sending Touch (ACTION_DOWN): 0:(516.0,1283.0)
+:Sending Touch (ACTION_UP): 0:(528.32983,1270.2383)
+:Sending Touch (ACTION_DOWN): 0:(857.0,1394.0)
+:Sending Touch (ACTION_UP): 0:(760.2101,1407.455)
+    //[calendar_time:2020-06-05 22:20:58.495  system_uptime:25211143]
+    // Sending event #1200
+:Sending Touch (ACTION_DOWN): 0:(172.0,918.0)
+:Sending Touch (ACTION_UP): 0:(64.92496,1020.1241)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(844.0,1203.0)
+:Sending Touch (ACTION_UP): 0:(833.3788,1124.2855)
+:Sending Touch (ACTION_DOWN): 0:(264.0,1596.0)
+:Sending Touch (ACTION_UP): 0:(241.19052,1613.4597)
+:Sending Touch (ACTION_DOWN): 0:(676.0,1483.0)
+:Sending Touch (ACTION_UP): 0:(663.92114,1493.536)
+:Sending Touch (ACTION_DOWN): 0:(19.0,1750.0)
+:Sending Touch (ACTION_UP): 0:(42.508686,1755.2356)
+:Sending Touch (ACTION_DOWN): 0:(625.0,361.0)
+:Sending Touch (ACTION_UP): 0:(619.70593,261.4039)
+:Sending Touch (ACTION_DOWN): 0:(836.0,304.0)
+:Sending Touch (ACTION_UP): 0:(851.97485,288.55872)
+:Sending Touch (ACTION_DOWN): 0:(733.0,1545.0)
+:Sending Touch (ACTION_UP): 0:(729.42004,1557.3563)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(241.0,1113.0)
+    //[calendar_time:2020-06-05 22:20:58.861  system_uptime:25211508]
+    // Sending event #1300
+:Sending Touch (ACTION_UP): 0:(254.71912,1085.0538)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(945.0,662.0)
+:Sending Touch (ACTION_UP): 0:(948.6646,667.4106)
+:Sending Touch (ACTION_DOWN): 0:(82.0,1548.0)
+:Sending Touch (ACTION_UP): 0:(47.015293,1426.4464)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Flip keyboardOpen=true
+:Sending Touch (ACTION_DOWN): 0:(115.0,2019.0)
+:Sending Touch (ACTION_UP): 0:(63.352684,2004.0914)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(1018.0,1651.0)
+:Sending Touch (ACTION_UP): 0:(1020.67957,1645.99)
+:Sending Touch (ACTION_DOWN): 0:(268.0,967.0)
+:Sending Touch (ACTION_UP): 0:(265.0216,972.4038)
+:Sending Touch (ACTION_DOWN): 0:(608.0,1039.0)
+:Sending Touch (ACTION_UP): 0:(576.99054,1045.3801)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+    //[calendar_time:2020-06-05 22:20:59.423  system_uptime:25212069]
+    // Sending event #1400
+:Sending Touch (ACTION_DOWN): 0:(29.0,409.0)
+:Sending Touch (ACTION_UP): 0:(51.647617,459.11343)
+:Sending Touch (ACTION_DOWN): 0:(799.0,1111.0)
+:Sending Touch (ACTION_UP): 0:(850.9098,1132.8568)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(295.0,1792.0)
+:Sending Touch (ACTION_UP): 0:(292.76755,1786.3219)
+:Sending Touch (ACTION_DOWN): 0:(544.0,1070.0)
+:Sending Touch (ACTION_UP): 0:(552.10626,1069.1613)
+:Sending Touch (ACTION_DOWN): 0:(684.0,449.0)
+:Sending Touch (ACTION_UP): 0:(687.6771,433.08633)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+    //[calendar_time:2020-06-05 22:21:00.356  system_uptime:25213003]
+    // Sending event #1500
+:Sending Touch (ACTION_DOWN): 0:(434.0,308.0)
+:Sending Touch (ACTION_UP): 0:(372.04294,299.90836)
+:Sending Touch (ACTION_DOWN): 0:(387.0,788.0)
+:Sending Touch (ACTION_UP): 0:(297.41907,841.81525)
+:Sending Touch (ACTION_DOWN): 0:(32.0,1285.0)
+:Sending Touch (ACTION_UP): 0:(80.90063,1194.3088)
+:Sending Touch (ACTION_DOWN): 0:(1012.0,966.0)
+:Sending Touch (ACTION_UP): 0:(1009.6691,1024.1622)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(58.0,1002.0)
+:Sending Touch (ACTION_UP): 0:(58.482616,995.3436)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,1.0)
+    //[calendar_time:2020-06-05 22:21:01.199  system_uptime:25213846]
+    // Sending event #1600
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(377.0,1540.0)
+:Sending Touch (ACTION_UP): 0:(371.86438,1548.9961)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(116.0,899.0)
+:Sending Touch (ACTION_UP): 0:(43.12527,783.58594)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(572.0,1056.0)
+:Sending Touch (ACTION_UP): 0:(569.2345,1055.9939)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(46.0,682.0)
+:Sending Touch (ACTION_UP): 0:(69.51642,773.23596)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(347.0,1114.0)
+:Sending Touch (ACTION_UP): 0:(353.82886,1112.565)
+    //[calendar_time:2020-06-05 22:21:01.872  system_uptime:25214519]
+    // Sending event #1700
+:Sending Touch (ACTION_DOWN): 0:(787.0,39.0)
+:Sending Touch (ACTION_UP): 0:(698.6278,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(467.0,1960.0)
+:Sending Touch (ACTION_UP): 0:(418.7461,1941.625)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(736.0,1808.0)
+:Sending Touch (ACTION_UP): 0:(730.8212,1806.5526)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,-5.0)
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] cmp=com.google.android.apps.nexuslauncher/.NexusLauncherActivity } in package com.google.android.apps.nexuslauncher
+:Sending Flip keyboardOpen=false
+:Sending Touch (ACTION_DOWN): 0:(865.0,1576.0)
+:Sending Touch (ACTION_UP): 0:(862.53973,1565.5029)
+    //[calendar_time:2020-06-05 22:21:02.872  system_uptime:25215518]
+    // Sending event #1800
+    //[calendar_time:2020-06-05 22:21:02.872  system_uptime:25215519]
+    // Sending event #1800
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-1.0)
+    // Rejecting start of Intent { act=android.intent.action.SET_WALLPAPER pkg=com.google.android.apps.wallpaper cmp=com.google.android.apps.wallpaper/.picker.TopLevelPickerActivity } in package com.google.android.apps.wallpaper
+    // Rejecting start of Intent { act=android.intent.action.SET_WALLPAPER pkg=com.google.android.apps.wallpaper cmp=com.google.android.apps.wallpaper/.picker.TopLevelPickerActivity } in package com.google.android.apps.wallpaper
+:Sending Flip keyboardOpen=true
+:Sending Touch (ACTION_DOWN): 0:(285.0,1051.0)
+:Sending Touch (ACTION_UP): 0:(280.44315,1050.7715)
+:Sending Touch (ACTION_DOWN): 0:(322.0,2075.0)
+:Sending Touch (ACTION_UP): 0:(320.2436,2070.2932)
+:Sending Touch (ACTION_DOWN): 0:(384.0,1686.0)
+:Sending Touch (ACTION_UP): 0:(367.71277,1698.9921)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(780.0,1532.0)
+:Sending Touch (ACTION_UP): 0:(785.7046,1422.4357)
+:Sending Touch (ACTION_DOWN): 0:(525.0,185.0)
+:Sending Touch (ACTION_UP): 0:(491.62823,79.022095)
+:Sending Touch (ACTION_DOWN): 0:(108.0,1931.0)
+:Sending Touch (ACTION_UP): 0:(111.52862,1932.231)
+    // Rejecting start of Intent { act=android.intent.action.SET_WALLPAPER pkg=com.google.android.apps.wallpaper cmp=com.google.android.apps.wallpaper/.picker.TopLevelPickerActivity } in package com.google.android.apps.wallpaper
+:Sending Touch (ACTION_DOWN): 0:(307.0,336.0)
+:Sending Touch (ACTION_UP): 0:(320.1925,330.93436)
+:Sending Touch (ACTION_DOWN): 0:(42.0,1729.0)
+:Sending Touch (ACTION_UP): 0:(39.242,1739.6475)
+:Sending Touch (ACTION_DOWN): 0:(942.0,53.0)
+:Sending Touch (ACTION_UP): 0:(936.6058,49.444633)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.google.android.dialer/.extensions.GoogleDialtactsActivity } in package com.google.android.dialer
+:Sending Trackball (ACTION_MOVE): 0:(4.0,0.0)
+    //[calendar_time:2020-06-05 22:21:03.435  system_uptime:25216082]
+    // Sending event #1900
+:Sending Touch (ACTION_DOWN): 0:(644.0,1349.0)
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+:Sending Touch (ACTION_UP): 0:(610.48004,1402.1459)
+:Sending Touch (ACTION_DOWN): 0:(34.0,1450.0)
+:Sending Touch (ACTION_UP): 0:(30.359896,1465.0911)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(856.0,1447.0)
+:Sending Touch (ACTION_UP): 0:(852.6597,1444.4614)
+    // Rejecting start of Intent { act=android.speech.action.WEB_SEARCH cmp=com.google.android.googlequicksearchbox/.SearchActivity } in package com.google.android.googlequicksearchbox
+:Sending Touch (ACTION_DOWN): 0:(144.0,1426.0)
+:Sending Touch (ACTION_UP): 0:(132.74841,1426.2598)
+:Sending Touch (ACTION_DOWN): 0:(863.0,979.0)
+:Sending Touch (ACTION_UP): 0:(862.4949,977.8058)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(434.0,359.0)
+:Sending Touch (ACTION_UP): 0:(469.9043,332.6261)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=content://com.android.calendar/time/1591395664045 cmp=com.google.android.calendar/com.android.calendar.AllInOneActivity } in package com.google.android.calendar
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-1.0)
+    //[calendar_time:2020-06-05 22:21:04.159  system_uptime:25216806]
+    // Sending event #2000
+:Sending Touch (ACTION_DOWN): 0:(326.0,1737.0)
+:Sending Touch (ACTION_UP): 0:(314.87363,1741.6841)
+    // Rejecting start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.google.android.apps.messaging/.ui.ConversationListActivity } in package com.google.android.apps.messaging
+:Sending Touch (ACTION_DOWN): 0:(45.0,74.0)
+:Sending Touch (ACTION_UP): 0:(29.956234,0.67399406)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(161.0,460.0)
+:Sending Touch (ACTION_UP): 0:(219.55887,409.03738)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(605.0,1650.0)
+:Sending Touch (ACTION_UP): 0:(597.475,1644.5148)
+:Sending Touch (ACTION_DOWN): 0:(106.0,326.0)
+:Sending Touch (ACTION_UP): 0:(104.80119,324.85733)
+:Sending Touch (ACTION_DOWN): 0:(928.0,934.0)
+:Sending Touch (ACTION_UP): 0:(921.6315,933.3264)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+    //[calendar_time:2020-06-05 22:21:04.488  system_uptime:25217134]
+    // Sending event #2100
+:Sending Touch (ACTION_DOWN): 0:(128.0,356.0)
+:Sending Touch (ACTION_UP): 0:(115.34157,359.06082)
+:Sending Touch (ACTION_DOWN): 0:(65.0,407.0)
+:Sending Touch (ACTION_UP): 0:(44.05523,402.8692)
+:Sending Touch (ACTION_DOWN): 0:(679.0,1932.0)
+:Sending Touch (ACTION_UP): 0:(678.8275,1934.3348)
+:Sending Touch (ACTION_DOWN): 0:(415.0,1228.0)
+:Sending Touch (ACTION_UP): 0:(444.00983,1273.1387)
+:Sending Touch (ACTION_DOWN): 0:(257.0,881.0)
+:Sending Touch (ACTION_UP): 0:(252.47441,891.14355)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(258.0,783.0)
+:Sending Touch (ACTION_UP): 0:(259.59775,775.4278)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(554.0,1147.0)
+:Sending Touch (ACTION_UP): 0:(553.6086,1138.0208)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(314.0,737.0)
+:Sending Touch (ACTION_UP): 0:(315.30112,732.50446)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(261.0,305.0)
+:Sending Touch (ACTION_UP): 0:(241.9499,299.8684)
+    //[calendar_time:2020-06-05 22:21:05.334  system_uptime:25217980]
+    // Sending event #2200
+    //[calendar_time:2020-06-05 22:21:05.335  system_uptime:25217981]
+    // Sending event #2200
+:Sending Touch (ACTION_DOWN): 0:(505.0,21.0)
+:Sending Touch (ACTION_UP): 0:(484.19385,23.848434)
+:Sending Touch (ACTION_DOWN): 0:(965.0,1432.0)
+:Sending Touch (ACTION_UP): 0:(954.23505,1432.3887)
+:Sending Touch (ACTION_DOWN): 0:(34.0,915.0)
+:Sending Touch (ACTION_UP): 0:(55.57554,873.77405)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(366.0,1639.0)
+:Sending Touch (ACTION_UP): 0:(373.55197,1631.6705)
+:Sending Touch (ACTION_DOWN): 0:(536.0,442.0)
+:Sending Touch (ACTION_UP): 0:(526.6489,484.76483)
+:Sending Touch (ACTION_DOWN): 0:(665.0,609.0)
+:Sending Touch (ACTION_UP): 0:(658.3031,638.30695)
+:Sending Touch (ACTION_DOWN): 0:(1059.0,1014.0)
+:Sending Touch (ACTION_UP): 0:(1073.8772,1012.5561)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,1.0)
+    //[calendar_time:2020-06-05 22:21:05.966  system_uptime:25218613]
+    // Sending event #2300
+    //[calendar_time:2020-06-05 22:21:05.966  system_uptime:25218613]
+    // Sending event #2300
+:Sending Touch (ACTION_DOWN): 0:(372.0,338.0)
+:Sending Touch (ACTION_UP): 0:(417.61703,344.69223)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Touch (ACTION_DOWN): 0:(746.0,1883.0)
+:Sending Touch (ACTION_UP): 0:(744.6424,1884.6216)
+:Sending Touch (ACTION_DOWN): 0:(1055.0,284.0)
+:Sending Touch (ACTION_UP): 0:(1024.9783,273.27267)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(35.0,1995.0)
+:Sending Touch (ACTION_UP): 0:(0.0,1929.7617)
+:Sending Flip keyboardOpen=false
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(197.0,1064.0)
+:Sending Touch (ACTION_UP): 0:(244.36108,1018.07025)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,3.0)
+    //[calendar_time:2020-06-05 22:21:06.545  system_uptime:25219192]
+    // Sending event #2400
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(343.0,1890.0)
+:Sending Touch (ACTION_UP): 0:(344.32443,1896.1157)
+:Sending Touch (ACTION_DOWN): 0:(995.0,131.0)
+:Sending Touch (ACTION_UP): 0:(998.41345,142.21895)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(1020.0,1483.0)
+:Sending Touch (ACTION_UP): 0:(1042.83,1482.0177)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(765.0,1006.0)
+:Sending Touch (ACTION_UP): 0:(692.22015,990.17883)
+:Sending Touch (ACTION_DOWN): 0:(248.0,531.0)
+:Sending Touch (ACTION_UP): 0:(190.80386,443.8477)
+:Sending Touch (ACTION_DOWN): 0:(148.0,514.0)
+:Sending Touch (ACTION_UP): 0:(144.6603,547.1459)
+    //[calendar_time:2020-06-05 22:21:07.027  system_uptime:25219673]
+    // Sending event #2500
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Flip keyboardOpen=true
+:Sending Touch (ACTION_DOWN): 0:(179.0,756.0)
+:Sending Touch (ACTION_UP): 0:(183.85158,767.93677)
+:Sending Touch (ACTION_DOWN): 0:(822.0,1348.0)
+:Sending Touch (ACTION_UP): 0:(755.4431,1327.706)
+:Sending Touch (ACTION_DOWN): 0:(178.0,857.0)
+:Sending Touch (ACTION_UP): 0:(183.71675,915.058)
+    // Rejecting start of Intent { cmp=com.google.android.googlequicksearchbox/com.google.android.apps.gsa.staticplugins.opa.OpaActivity } in package com.google.android.googlequicksearchbox
+:Sending Touch (ACTION_DOWN): 0:(932.0,1965.0)
+:Sending Touch (ACTION_UP): 0:(866.7838,1922.6981)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(913.0,48.0)
+:Sending Touch (ACTION_UP): 0:(890.16077,7.1488914)
+:Sending Touch (ACTION_DOWN): 0:(109.0,1009.0)
+:Sending Touch (ACTION_UP): 0:(115.90289,1011.81824)
+:Sending Touch (ACTION_DOWN): 0:(325.0,573.0)
+:Sending Touch (ACTION_UP): 0:(329.65668,575.4021)
+:Sending Touch (ACTION_DOWN): 0:(244.0,1031.0)
+:Sending Touch (ACTION_UP): 0:(266.1631,1023.9377)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+    //[calendar_time:2020-06-05 22:21:07.589  system_uptime:25220235]
+    // Sending event #2600
+:Sending Touch (ACTION_DOWN): 0:(364.0,450.0)
+:Sending Touch (ACTION_UP): 0:(365.15335,439.28415)
+:Sending Touch (ACTION_DOWN): 0:(1011.0,1948.0)
+:Sending Touch (ACTION_UP): 0:(955.746,1985.3492)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(176.0,1339.0)
+:Sending Touch (ACTION_UP): 0:(192.92209,1336.215)
+:Sending Touch (ACTION_DOWN): 0:(437.0,655.0)
+:Sending Touch (ACTION_UP): 0:(430.11142,658.0638)
+:Sending Touch (ACTION_DOWN): 0:(795.0,704.0)
+:Sending Touch (ACTION_UP): 0:(800.4981,711.61017)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-3.0)
+:Sending Touch (ACTION_DOWN): 0:(163.0,1070.0)
+:Sending Touch (ACTION_UP): 0:(206.86577,1053.6481)
+    // Rejecting start of Intent { act=android.speech.action.WEB_SEARCH cmp=com.google.android.googlequicksearchbox/.SearchActivity } in package com.google.android.googlequicksearchbox
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+    //[calendar_time:2020-06-05 22:21:08.420  system_uptime:25221067]
+    // Sending event #2700
+:Sending Touch (ACTION_DOWN): 0:(1060.0,468.0)
+:Sending Touch (ACTION_UP): 0:(1031.754,494.16348)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(847.0,495.0)
+:Sending Touch (ACTION_UP): 0:(849.6143,497.05634)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(369.0,1745.0)
+:Sending Touch (ACTION_UP): 0:(375.93326,1767.2721)
+:Sending Touch (ACTION_DOWN): 0:(579.0,1345.0)
+:Sending Touch (ACTION_UP): 0:(489.69897,1431.0228)
+    //[calendar_time:2020-06-05 22:21:08.922  system_uptime:25221569]
+    // Sending event #2800
+    //[calendar_time:2020-06-05 22:21:08.923  system_uptime:25221570]
+    // Sending event #2800
+:Sending Touch (ACTION_DOWN): 0:(763.0,1518.0)
+:Sending Touch (ACTION_UP): 0:(815.4884,1528.7014)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,2.0)
+:Sending Flip keyboardOpen=false
+:Sending Touch (ACTION_DOWN): 0:(113.0,348.0)
+:Sending Touch (ACTION_UP): 0:(115.23985,359.65762)
+:Sending Touch (ACTION_DOWN): 0:(898.0,850.0)
+:Sending Touch (ACTION_UP): 0:(891.9731,849.66846)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(522.0,2083.0)
+:Sending Touch (ACTION_UP): 0:(509.31616,2060.9136)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Touch (ACTION_DOWN): 0:(214.0,2057.0)
+:Sending Touch (ACTION_UP): 0:(209.67615,2061.637)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,3.0)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,-1.0)
+:Sending Touch (ACTION_DOWN): 0:(277.0,1801.0)
+:Sending Touch (ACTION_UP): 0:(268.03455,1801.6545)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,0.0)
+    //[calendar_time:2020-06-05 22:21:09.392  system_uptime:25222039]
+    // Sending event #2900
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-4.0)
+** Monkey aborted due to error.
+Events injected: 2912
+:Sending rotation degree=0, persist=false
+:Dropped: keys=1 pointers=20 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=19980ms (0ms mobile, 0ms wifi, 19980ms not connected)

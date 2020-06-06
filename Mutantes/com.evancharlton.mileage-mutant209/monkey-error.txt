@@ -1,0 +1,50 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 23496)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToPosition(int)' on a null object reference
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.VehicleStatisticsActivity}: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToPosition(int)' on a null object reference
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2778)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2576)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+// 	at android.widget.TabHost$2.onTabSelectionChanged(TabHost.java:172)
+// 	at android.widget.TabWidget$TabClickListener.onClick(TabWidget.java:562)
+// 	at android.view.View.performClick(View.java:6294)
+// 	at android.view.View$PerformClick.run(View.java:24770)
+// 	at android.os.Handler.handleCallback(Handler.java:790)
+// 	at android.os.Handler.dispatchMessage(Handler.java:99)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// Caused by: java.lang.NullPointerException: Attempt to invoke interface method 'boolean android.database.Cursor.moveToPosition(int)' on a null object reference
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter.changeCursor(VehicleStatisticsAdapter.java:119)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.setAdapter(VehicleStatisticsActivity.java:199)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.recalculate(VehicleStatisticsActivity.java:175)
+// 	at com.evancharlton.mileage.VehicleStatisticsActivity.onCreate(VehicleStatisticsActivity.java:131)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	... 16 more
+// 
+** System appears to have crashed at event 25 of 1000000 using seed 1591522617961

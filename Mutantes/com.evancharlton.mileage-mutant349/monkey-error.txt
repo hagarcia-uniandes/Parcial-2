@@ -1,0 +1,70 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 4574)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.content.Context.getPackageName()' on a null object reference
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.NullPointerException: Attempt to invoke virtual method 'java.lang.String android.content.Context.getPackageName()' on a null object reference
+// 	at android.content.ComponentName.<init>(ComponentName.java:130)
+// 	at android.content.Intent.<init>(Intent.java:5780)
+// 	at com.evancharlton.mileage.ImportExportActivity$1.onClick(ImportExportActivity.java:34)
+// 	at android.view.View.performClick(View.java:6294)
+// 	at android.view.View.onKeyUp(View.java:12470)
+// 	at android.widget.TextView.onKeyUp(TextView.java:7422)
+// 	at android.view.KeyEvent.dispatch(KeyEvent.java:2715)
+// 	at android.view.View.dispatchKeyEvent(View.java:11713)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at android.widget.ScrollView.dispatchKeyEvent(ScrollView.java:389)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at com.android.internal.policy.DecorView.superDispatchKeyEvent(DecorView.java:440)
+// 	at com.android.internal.policy.PhoneWindow.superDispatchKeyEvent(PhoneWindow.java:1819)
+// 	at android.app.Activity.dispatchKeyEvent(Activity.java:3267)
+// 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:354)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4733)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4605)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4293)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4350)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4326)
+// 	at android.view.ViewRootImpl$ImeInputStage.onFinishedInputEvent(ViewRootImpl.java:4487)
+// 	at android.view.inputmethod.InputMethodManager$PendingEvent.run(InputMethodManager.java:2435)
+// 	at android.view.inputmethod.InputMethodManager.invokeFinishedInputEventCallback(InputMethodManager.java:1998)
+// 	at android.view.inputmethod.InputMethodManager.finishedInputEvent(InputMethodManager.java:1989)
+// 	at android.view.inputmethod.InputMethodManager$ImeInputEventSender.onInputEventFinished(InputMethodManager.java:2412)
+// 	at android.view.InputEventSender.dispatchInputEventFinished(InputEventSender.java:141)
+// 	at android.os.MessageQueue.nativePollOnce(Native Method)
+// 	at android.os.MessageQueue.next(MessageQueue.java:325)
+// 	at android.os.Looper.loop(Looper.java:142)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 314 of 1000000 using seed 1591422291114

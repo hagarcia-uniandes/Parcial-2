@@ -1,0 +1,121 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591546241483 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(4.0,4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(512.0,1644.0)
+:Sending Touch (ACTION_UP): 0:(520.27673,1635.428)
+:Sending Touch (ACTION_DOWN): 0:(297.0,211.0)
+:Sending Touch (ACTION_UP): 0:(313.5579,214.82396)
+:Sending Touch (ACTION_DOWN): 0:(332.0,450.0)
+:Sending Touch (ACTION_UP): 0:(279.9648,525.4801)
+:Sending Touch (ACTION_DOWN): 0:(549.0,1314.0)
+:Sending Touch (ACTION_UP): 0:(530.04175,1273.8495)
+:Sending Touch (ACTION_DOWN): 0:(463.0,1400.0)
+:Sending Touch (ACTION_UP): 0:(517.33075,1415.694)
+:Sending Touch (ACTION_DOWN): 0:(47.0,115.0)
+:Sending Touch (ACTION_UP): 0:(41.38,118.756836)
+:Sending Touch (ACTION_DOWN): 0:(60.0,2003.0)
+:Sending Touch (ACTION_UP): 0:(51.054657,1996.5063)
+:Sending Touch (ACTION_DOWN): 0:(887.0,1072.0)
+:Sending Touch (ACTION_UP): 0:(849.5724,1067.2543)
+:Sending Touch (ACTION_DOWN): 0:(243.0,643.0)
+:Sending Touch (ACTION_UP): 0:(231.02722,630.6255)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalsListActivity } in package com.evancharlton.mileage
+    //[calendar_time:2020-06-05 12:10:18.405  system_uptime:38550573]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(139.0,692.0)
+:Sending Touch (ACTION_UP): 0:(138.9813,690.84766)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-5.0)
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(1035.0,875.0)
+:Sending Touch (ACTION_UP): 0:(1036.7902,875.50867)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(196.0,238.0)
+:Sending Touch (ACTION_UP): 0:(187.76794,245.19989)
+:Sending Touch (ACTION_DOWN): 0:(283.0,639.0)
+:Sending Touch (ACTION_UP): 0:(256.57156,668.32324)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-4.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(376.0,1521.0)
+:Sending Touch (ACTION_UP): 0:(385.29004,1512.546)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalTemplateListActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(380.0,1933.0)
+:Sending Touch (ACTION_UP): 0:(386.90134,1935.324)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,2.0)
+:Sending Touch (ACTION_DOWN): 0:(591.0,88.0)
+:Sending Touch (ACTION_UP): 0:(598.5654,83.81261)
+:Sending Touch (ACTION_DOWN): 0:(674.0,1828.0)
+:Sending Touch (ACTION_UP): 0:(681.3183,1829.106)
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+    //[calendar_time:2020-06-05 12:10:19.216  system_uptime:38551384]
+    // Sending event #200
+:Sending Touch (ACTION_DOWN): 0:(235.0,1646.0)
+:Sending Touch (ACTION_UP): 0:(240.4149,1615.9052)
+:Sending Touch (ACTION_DOWN): 0:(930.0,1054.0)
+:Sending Touch (ACTION_UP): 0:(845.6202,1048.0117)
+:Sending Touch (ACTION_DOWN): 0:(856.0,1273.0)
+:Sending Touch (ACTION_UP): 0:(801.6963,1211.6389)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(337.0,480.0)
+:Sending Touch (ACTION_UP): 0:(267.07285,437.76343)
+:Sending Touch (ACTION_DOWN): 0:(124.0,138.0)
+:Sending Touch (ACTION_UP): 0:(125.416595,138.907)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,1.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalTemplateActivity } in package com.evancharlton.mileage
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalTemplateActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(667.0,314.0)
+:Sending Touch (ACTION_UP): 0:(664.9272,326.0877)
+:Sending Touch (ACTION_DOWN): 0:(995.0,64.0)
+:Sending Touch (ACTION_UP): 0:(907.9737,125.96391)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-5.0)
+    //[calendar_time:2020-06-05 12:10:20.225  system_uptime:38552393]
+    // Sending event #300
+:Sending Touch (ACTION_DOWN): 0:(752.0,316.0)
+:Sending Touch (ACTION_UP): 0:(723.1302,263.3425)
+:Sending Touch (ACTION_DOWN): 0:(203.0,728.0)
+:Sending Touch (ACTION_UP): 0:(246.74725,753.70056)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-2.0)
+:Sending Touch (ACTION_DOWN): 0:(1046.0,1432.0)
+:Sending Touch (ACTION_UP): 0:(1030.0697,1482.7756)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(741.0,1957.0)
+:Sending Touch (ACTION_UP): 0:(743.75354,1951.3063)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(236.0,1377.0)
+    //[calendar_time:2020-06-05 12:10:21.699  system_uptime:38553867]
+    // Sending event #400
+:Sending Touch (ACTION_UP): 0:(250.16148,1385.5002)
+** Monkey aborted due to error.
+Events injected: 404
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=5203ms (0ms mobile, 0ms wifi, 5203ms not connected)

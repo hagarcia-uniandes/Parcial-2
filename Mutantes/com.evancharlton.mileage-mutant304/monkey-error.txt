@@ -1,0 +1,65 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 9158)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+// 	at com.evancharlton.mileage.ImportActivity$FileAdapter.getView(ImportActivity.java:213)
+// 	at android.widget.AbsSpinner.onMeasure(AbsSpinner.java:204)
+// 	at android.widget.Spinner.onMeasure(Spinner.java:602)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6602)
+// 	at android.widget.LinearLayout.measureChildBeforeLayout(LinearLayout.java:1514)
+// 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:806)
+// 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:685)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.widget.ScrollView.measureChildWithMargins(ScrollView.java:1308)
+// 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:185)
+// 	at android.widget.ScrollView.onMeasure(ScrollView.java:350)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:958)
+// 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:685)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6602)
+// 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:185)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.widget.LinearLayout.measureVertical(LinearLayout.java:958)
+// 	at android.widget.LinearLayout.onMeasure(LinearLayout.java:685)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.view.ViewGroup.measureChildWithMargins(ViewGroup.java:6602)
+// 	at android.widget.FrameLayout.onMeasure(FrameLayout.java:185)
+// 	at com.android.internal.policy.DecorView.onMeasure(DecorView.java:724)
+// 	at android.view.View.measure(View.java:22071)
+// 	at android.view.ViewRootImpl.performMeasure(ViewRootImpl.java:2422)
+// 	at android.view.ViewRootImpl.measureHierarchy(ViewRootImpl.java:1504)
+// 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:1761)
+// 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1392)
+// 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6752)
+// 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:911)
+// 	at android.view.Choreographer.doCallbacks(Choreographer.java:723)
+// 	at android.view.Choreographer.doFrame(Choreographer.java:658)
+// 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:897)
+// 	at android.os.Handler.handleCallback(Handler.java:790)
+// 	at android.os.Handler.dispatchMessage(Handler.java:99)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 3255 of 1000000 using seed 1591398905132

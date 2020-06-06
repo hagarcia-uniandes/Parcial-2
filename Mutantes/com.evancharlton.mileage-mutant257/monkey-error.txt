@@ -1,0 +1,89 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 31266)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: String resource ID #0x0
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// android.content.res.Resources$NotFoundException: String resource ID #0x0
+// 	at android.content.res.Resources.getText(Resources.java:339)
+// 	at android.content.Context.getText(Context.java:543)
+// 	at android.app.AlertDialog$Builder.setTitle(AlertDialog.java:506)
+// 	at com.evancharlton.mileage.BaseFormActivity.onCreateDialog(BaseFormActivity.java:113)
+// 	at android.app.Activity.onCreateDialog(Activity.java:3885)
+// 	at android.app.Activity.createDialog(Activity.java:1168)
+// 	at android.app.Activity.showDialog(Activity.java:3978)
+// 	at android.app.Activity.showDialog(Activity.java:3937)
+// 	at com.evancharlton.mileage.BaseFormActivity.onOptionsItemSelected(BaseFormActivity.java:103)
+// 	at android.app.Activity.onMenuItemSelected(Activity.java:3450)
+// 	at com.android.internal.policy.PhoneWindow.onMenuItemSelected(PhoneWindow.java:1236)
+// 	at com.android.internal.view.menu.MenuBuilder.dispatchMenuItemSelected(MenuBuilder.java:761)
+// 	at com.android.internal.view.menu.MenuItemImpl.invoke(MenuItemImpl.java:167)
+// 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:908)
+// 	at com.android.internal.view.menu.MenuBuilder.performItemAction(MenuBuilder.java:898)
+// 	at com.android.internal.view.menu.IconMenuView.invokeItem(IconMenuView.java:468)
+// 	at com.android.internal.view.menu.IconMenuItemView.performClick(IconMenuItemView.java:140)
+// 	at android.view.View.onKeyUp(View.java:12470)
+// 	at android.widget.TextView.onKeyUp(TextView.java:7422)
+// 	at android.view.KeyEvent.dispatch(KeyEvent.java:2715)
+// 	at android.view.View.dispatchKeyEvent(View.java:11713)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at com.android.internal.view.menu.IconMenuView.dispatchKeyEvent(IconMenuView.java:558)
+// 	at android.view.ViewGroup.dispatchKeyEvent(ViewGroup.java:1834)
+// 	at com.android.internal.policy.DecorView.dispatchKeyEvent(DecorView.java:355)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.processKeyEvent(ViewRootImpl.java:4733)
+// 	at android.view.ViewRootImpl$ViewPostImeInputStage.onProcess(ViewRootImpl.java:4605)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4293)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4350)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4293)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4350)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl$InputStage.onDeliverToNext(ViewRootImpl.java:4200)
+// 	at android.view.ViewRootImpl$InputStage.forward(ViewRootImpl.java:4166)
+// 	at android.view.ViewRootImpl$AsyncInputStage.forward(ViewRootImpl.java:4293)
+// 	at android.view.ViewRootImpl$InputStage.apply(ViewRootImpl.java:4174)
+// 	at android.view.ViewRootImpl$AsyncInputStage.apply(ViewRootImpl.java:4350)
+// 	at android.view.ViewRootImpl$InputStage.deliver(ViewRootImpl.java:4147)
+// 	at android.view.ViewRootImpl.deliverInputEvent(ViewRootImpl.java:6661)
+// 	at android.view.ViewRootImpl.doProcessInputEvents(ViewRootImpl.java:6635)
+// 	at android.view.ViewRootImpl.enqueueInputEvent(ViewRootImpl.java:6596)
+// 	at android.view.ViewRootImpl$WindowInputEventReceiver.onInputEvent(ViewRootImpl.java:6764)
+// 	at android.view.InputEventReceiver.dispatchInputEvent(InputEventReceiver.java:186)
+// 	at android.os.MessageQueue.nativePollOnce(Native Method)
+// 	at android.os.MessageQueue.next(MessageQueue.java:325)
+// 	at android.os.Looper.loop(Looper.java:142)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 831 of 1000000 using seed 1591590414827

@@ -1,0 +1,78 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 31000)
+// Short Msg: android.view.InflateException
+// Long Msg: android.view.InflateException: <merge /> can be used only with a valid ViewGroup root and attachToRoot=true
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: <merge /> can be used only with a valid ViewGroup root and attachToRoot=true
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2778)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+// 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.view.InflateException: Binary XML file line #2: <merge /> can be used only with a valid ViewGroup root and attachToRoot=true
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2778)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2576)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+// 	at android.widget.TabHost.addTab(TabHost.java:238)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	... 9 more
+// Caused by: android.view.InflateException: Binary XML file line #2: <merge /> can be used only with a valid ViewGroup root and attachToRoot=true
+// Caused by: android.view.InflateException: <merge /> can be used only with a valid ViewGroup root and attachToRoot=true
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:485)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:423)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+// 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:37)
+// 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2576)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+// 	at android.widget.TabHost.addTab(TabHost.java:238)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+// 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 11 of 1000000 using seed 1591384382039

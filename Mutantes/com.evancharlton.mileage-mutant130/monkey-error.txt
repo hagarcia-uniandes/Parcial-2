@@ -1,0 +1,47 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 4943)
+// Short Msg: android.database.sqlite.SQLiteCantOpenDatabaseException
+// Long Msg: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.RuntimeException: An error occurred while executing doInBackground()
+// 	at android.os.AsyncTask$3.done(AsyncTask.java:353)
+// 	at java.util.concurrent.FutureTask.finishCompletion(FutureTask.java:383)
+// 	at java.util.concurrent.FutureTask.setException(FutureTask.java:252)
+// 	at java.util.concurrent.FutureTask.run(FutureTask.java:271)
+// 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1162)
+// 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:636)
+// 	at java.lang.Thread.run(Thread.java:764)
+// Caused by: android.database.sqlite.SQLiteCantOpenDatabaseException: unknown error (code 14): Could not open database
+// 	at android.database.sqlite.SQLiteConnection.nativeOpen(Native Method)
+// 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:210)
+// 	at android.database.sqlite.SQLiteConnection.open(SQLiteConnection.java:194)
+// 	at android.database.sqlite.SQLiteConnectionPool.openConnectionLocked(SQLiteConnectionPool.java:493)
+// 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:200)
+// 	at android.database.sqlite.SQLiteConnectionPool.open(SQLiteConnectionPool.java:192)
+// 	at android.database.sqlite.SQLiteDatabase.openInner(SQLiteDatabase.java:864)
+// 	at android.database.sqlite.SQLiteDatabase.open(SQLiteDatabase.java:852)
+// 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:750)
+// 	at android.database.sqlite.SQLiteDatabase.openDatabase(SQLiteDatabase.java:699)
+// 	at com.evancharlton.mileage.tasks.DbImportTask.upgradeDatabase(DbImportTask.java:75)
+// 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:43)
+// 	at com.evancharlton.mileage.tasks.DbImportTask.doInBackground(DbImportTask.java:20)
+// 	at android.os.AsyncTask$2.call(AsyncTask.java:333)
+// 	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+// 	... 3 more
+// 
+** System appears to have crashed at event 19992 of 1000000 using seed 1591480527160

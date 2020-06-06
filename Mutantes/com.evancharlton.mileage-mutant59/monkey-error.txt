@@ -1,0 +1,93 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 21026)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.NullPointerException: Attempt to invoke virtual method 'void android.widget.TextView.setText(java.lang.CharSequence)' on a null object reference
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter.getView(VehicleStatisticsAdapter.java:169)
+// 	at android.widget.AbsListView.obtainView(AbsListView.java:2365)
+// 	at android.widget.ListView.makeAndAddView(ListView.java:2052)
+// 	at android.widget.ListView.fillDown(ListView.java:786)
+// 	at android.widget.ListView.fillFromTop(ListView.java:847)
+// 	at android.widget.ListView.layoutChildren(ListView.java:1826)
+// 	at android.widget.AbsListView.onLayout(AbsListView.java:2164)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1791)
+// 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1635)
+// 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1544)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+// 	at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1791)
+// 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1635)
+// 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1544)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+// 	at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+// 	at com.android.internal.policy.DecorView.onLayout(DecorView.java:761)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+// 	at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1791)
+// 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1635)
+// 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1544)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+// 	at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+// 	at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.LinearLayout.setChildFrame(LinearLayout.java:1791)
+// 	at android.widget.LinearLayout.layoutVertical(LinearLayout.java:1635)
+// 	at android.widget.LinearLayout.onLayout(LinearLayout.java:1544)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.widget.FrameLayout.layoutChildren(FrameLayout.java:323)
+// 	at android.widget.FrameLayout.onLayout(FrameLayout.java:261)
+// 	at com.android.internal.policy.DecorView.onLayout(DecorView.java:761)
+// 	at android.view.View.layout(View.java:19659)
+// 	at android.view.ViewGroup.layout(ViewGroup.java:6075)
+// 	at android.view.ViewRootImpl.performLayout(ViewRootImpl.java:2496)
+// 	at android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:2212)
+// 	at android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:1392)
+// 	at android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:6752)
+// 	at android.view.Choreographer$CallbackRecord.run(Choreographer.java:911)
+// 	at android.view.Choreographer.doCallbacks(Choreographer.java:723)
+// 	at android.view.Choreographer.doFrame(Choreographer.java:658)
+// 	at android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:897)
+// 	at android.os.Handler.handleCallback(Handler.java:790)
+// 	at android.os.Handler.dispatchMessage(Handler.java:99)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 34 of 1000000 using seed 1591425421135

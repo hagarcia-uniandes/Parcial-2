@@ -1,0 +1,62 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 27303)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.Mileage}: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2778)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+// 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// Caused by: java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.FillupActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2778)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2576)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+// 	at android.widget.TabHost.addTab(TabHost.java:238)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	... 9 more
+// Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:215)
+// 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2134)
+// 	at android.content.res.Resources.getLayout(Resources.java:1143)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+// 	at com.android.internal.policy.PhoneWindow.setContentView(PhoneWindow.java:419)
+// 	at android.app.Activity.setContentView(Activity.java:2669)
+// 	at com.evancharlton.mileage.BaseFormActivity.onCreate(BaseFormActivity.java:35)
+// 	at com.evancharlton.mileage.FillupActivity.onCreate(FillupActivity.java:72)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	... 20 more
+// 
+** System appears to have crashed at event 11 of 1000000 using seed 1591536461005

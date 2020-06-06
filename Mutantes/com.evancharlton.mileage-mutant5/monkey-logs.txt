@@ -1,0 +1,56 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591451155952 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(1.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+    // Rejecting start of Intent { act=com.google.android.googlequicksearchbox.TEXT_ASSIST pkg=com.google.android.googlequicksearchbox cmp=com.google.android.googlequicksearchbox/com.google.android.apps.gsa.queryentry.QueryEntryActivity } in package com.google.android.googlequicksearchbox
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(481.0,1791.0)
+:Sending Touch (ACTION_UP): 0:(479.56384,1855.4166)
+:Sending Touch (ACTION_DOWN): 0:(326.0,674.0)
+:Sending Touch (ACTION_UP): 0:(326.23962,676.2968)
+:Sending Trackball (ACTION_MOVE): 0:(-4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,0.0)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,2.0)
+    //[calendar_time:2020-06-05 01:32:46.749  system_uptime:298794]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(211.0,1704.0)
+:Sending Touch (ACTION_UP): 0:(212.00705,1695.5984)
+:Sending Touch (ACTION_DOWN): 0:(805.0,933.0)
+:Sending Touch (ACTION_UP): 0:(835.9933,878.996)
+:Sending Touch (ACTION_DOWN): 0:(556.0,479.0)
+:Sending Touch (ACTION_UP): 0:(555.54926,481.36035)
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(753.0,89.0)
+:Sending Touch (ACTION_UP): 0:(773.16974,89.67152)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+** Monkey aborted due to error.
+Events injected: 139
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=1 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=2324ms (0ms mobile, 0ms wifi, 2324ms not connected)

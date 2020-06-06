@@ -1,0 +1,96 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591503555266 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(1052.0,176.0)
+:Sending Touch (ACTION_UP): 0:(1067.8031,165.57323)
+:Sending Touch (ACTION_DOWN): 0:(1054.0,1271.0)
+:Sending Touch (ACTION_UP): 0:(1053.4553,1280.0154)
+:Sending Touch (ACTION_DOWN): 0:(642.0,1208.0)
+:Sending Touch (ACTION_UP): 0:(649.72253,1208.5005)
+:Sending Touch (ACTION_DOWN): 0:(354.0,1929.0)
+:Sending Touch (ACTION_UP): 0:(366.91486,1885.3378)
+:Sending Touch (ACTION_DOWN): 0:(476.0,754.0)
+:Sending Touch (ACTION_UP): 0:(482.43674,698.7034)
+:Sending Touch (ACTION_DOWN): 0:(450.0,549.0)
+:Sending Touch (ACTION_UP): 0:(396.3006,521.5172)
+:Sending Touch (ACTION_DOWN): 0:(192.0,1028.0)
+:Sending Touch (ACTION_UP): 0:(173.43979,1037.6636)
+:Sending Touch (ACTION_DOWN): 0:(804.0,1423.0)
+:Sending Touch (ACTION_UP): 0:(764.1074,1420.0455)
+:Sending Touch (ACTION_DOWN): 0:(628.0,1286.0)
+:Sending Touch (ACTION_UP): 0:(623.43024,1228.7156)
+:Sending Touch (ACTION_DOWN): 0:(359.0,1704.0)
+:Sending Touch (ACTION_UP): 0:(336.38116,1715.9854)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(546.0,1802.0)
+:Sending Touch (ACTION_UP): 0:(545.3884,1800.0607)
+    // Rejecting start of Intent { cmp=com.android.systemui/.recents.RecentsActivity } in package com.android.systemui
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalsListActivity } in package com.evancharlton.mileage
+    // Injection Failed
+:Sending Touch (ACTION_DOWN): 0:(465.0,1787.0)
+:Sending Touch (ACTION_UP): 0:(465.02768,1793.8547)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-3.0)
+    //[calendar_time:2020-06-05 10:18:22.939  system_uptime:31835108]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(192.0,1941.0)
+:Sending Touch (ACTION_UP): 0:(175.0883,1943.6211)
+:Sending Trackball (ACTION_MOVE): 0:(-2.0,-5.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(175.0,1300.0)
+:Sending Touch (ACTION_UP): 0:(152.64728,1345.1392)
+:Sending Trackball (ACTION_MOVE): 0:(4.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,1.0)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalTemplateListActivity } in package com.evancharlton.mileage
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(4.0,1.0)
+:Sending Trackball (ACTION_MOVE): 0:(-1.0,4.0)
+:Sending Touch (ACTION_DOWN): 0:(255.0,545.0)
+:Sending Touch (ACTION_UP): 0:(250.0747,543.9127)
+:Sending Touch (ACTION_DOWN): 0:(1045.0,110.0)
+    //[calendar_time:2020-06-05 10:18:23.737  system_uptime:31835905]
+    // Sending event #200
+:Sending Touch (ACTION_UP): 0:(1071.041,5.987769)
+    // Allowing start of Intent { cmp=com.evancharlton.mileage/.ServiceIntervalTemplateActivity } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(447.0,363.0)
+:Sending Touch (ACTION_UP): 0:(515.01434,448.9959)
+:Sending Touch (ACTION_DOWN): 0:(32.0,1543.0)
+:Sending Touch (ACTION_UP): 0:(26.893059,1542.7972)
+:Sending Touch (ACTION_DOWN): 0:(468.0,1969.0)
+:Sending Touch (ACTION_UP): 0:(464.92014,1991.5643)
+:Sending Touch (ACTION_DOWN): 0:(479.0,1340.0)
+:Sending Touch (ACTION_UP): 0:(490.0524,1349.5624)
+:Sending Touch (ACTION_DOWN): 0:(137.0,1937.0)
+:Sending Touch (ACTION_UP): 0:(143.80624,1950.1974)
+:Sending Touch (ACTION_DOWN): 0:(43.0,1272.0)
+:Sending Touch (ACTION_UP): 0:(60.01832,1252.7958)
+:Sending Touch (ACTION_DOWN): 0:(5.0,1902.0)
+** Monkey aborted due to error.
+Events injected: 257
+:Sending rotation degree=0, persist=false
+:Dropped: keys=1 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=3848ms (0ms mobile, 0ms wifi, 3848ms not connected)

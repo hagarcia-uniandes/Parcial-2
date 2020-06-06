@@ -1,0 +1,52 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591577444408 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Touch (ACTION_DOWN): 0:(810.0,330.0)
+:Sending Touch (ACTION_UP): 0:(807.7544,328.81458)
+:Sending Touch (ACTION_DOWN): 0:(150.0,875.0)
+:Sending Touch (ACTION_UP): 0:(143.6479,890.22504)
+:Sending Touch (ACTION_DOWN): 0:(122.0,619.0)
+:Sending Touch (ACTION_UP): 0:(78.37253,642.36285)
+:Sending Trackball (ACTION_MOVE): 0:(3.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,1.0)
+:Sending Touch (ACTION_DOWN): 0:(1052.0,194.0)
+:Sending Touch (ACTION_UP): 0:(1053.8762,176.45999)
+:Sending Touch (ACTION_DOWN): 0:(855.0,1409.0)
+:Sending Touch (ACTION_UP): 0:(856.1015,1406.572)
+:Sending Touch (ACTION_DOWN): 0:(439.0,387.0)
+:Sending Touch (ACTION_UP): 0:(395.17938,469.2952)
+:Sending Touch (ACTION_DOWN): 0:(423.0,701.0)
+:Sending Touch (ACTION_UP): 0:(370.7562,725.836)
+:Sending Touch (ACTION_DOWN): 0:(775.0,154.0)
+:Sending Touch (ACTION_UP): 0:(773.64777,154.71245)
+    //[calendar_time:2020-06-05 20:56:24.015  system_uptime:20136662]
+    // Sending event #100
+** Monkey aborted due to error.
+Events injected: 105
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=1678ms (0ms mobile, 0ms wifi, 1678ms not connected)
