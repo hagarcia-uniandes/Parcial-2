@@ -1,0 +1,46 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 10328)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.RuntimeException: Unable to start activity ComponentInfo{com.evancharlton.mileage/com.evancharlton.mileage.SettingsActivity}: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2778)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+// 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// Caused by: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:215)
+// 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2134)
+// 	at android.content.res.Resources.getXml(Resources.java:1192)
+// 	at android.preference.GenericInflater.inflate(GenericInflater.java:262)
+// 	at android.preference.PreferenceManager.inflateFromResource(PreferenceManager.java:324)
+// 	at android.preference.PreferenceActivity.addPreferencesFromResource(PreferenceActivity.java:1549)
+// 	at com.evancharlton.mileage.SettingsActivity.onCreate(SettingsActivity.java:28)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	... 9 more
+// 
+** System appears to have crashed at event 13464 of 1000000 using seed 1591527483038

@@ -1,0 +1,49 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 2943)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.database.Cursor) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.database.Cursor): [0x83] register v10 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in /data/app/com.evancharlton.mileage-kxTixuts7q78GgR5-Q3MwQ==/base.apk)
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.VerifyError: Rejecting class com.evancharlton.mileage.dao.Fillup that attempts to sub-type erroneous class com.evancharlton.mileage.dao.Dao (declaration of 'com.evancharlton.mileage.dao.Fillup' appears in /data/app/com.evancharlton.mileage-kxTixuts7q78GgR5-Q3MwQ==/base.apk)
+// 	at com.evancharlton.mileage.FillupActivity.<init>(FillupActivity.java:64)
+// 	at java.lang.Class.newInstance(Native Method)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1174)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2669)
+// 	at android.app.ActivityThread.startActivityNow(ActivityThread.java:2576)
+// 	at android.app.LocalActivityManager.moveToState(LocalActivityManager.java:136)
+// 	at android.app.LocalActivityManager.startActivity(LocalActivityManager.java:348)
+// 	at android.widget.TabHost$IntentContentStrategy.getContentView(TabHost.java:774)
+// 	at android.widget.TabHost.setCurrentTab(TabHost.java:428)
+// 	at android.widget.TabHost.addTab(TabHost.java:238)
+// 	at com.evancharlton.mileage.Mileage.onCreate(Mileage.java:31)
+// 	at android.app.Activity.performCreate(Activity.java:7009)
+// 	at android.app.Activity.performCreate(Activity.java:7000)
+// 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1214)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2731)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+// 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// Caused by: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.dao.Dao: void com.evancharlton.mileage.dao.Dao.load(android.database.Cursor) failed to verify: void com.evancharlton.mileage.dao.Dao.load(android.database.Cursor): [0x83] register v10 has type Zero/null but expected Double (Low Half) (declaration of 'com.evancharlton.mileage.dao.Dao' appears in /data/app/com.evancharlton.mileage-kxTixuts7q78GgR5-Q3MwQ==/base.apk)
+// 	... 24 more
+// 
+** System appears to have crashed at event 10 of 1000000 using seed 1591672712361

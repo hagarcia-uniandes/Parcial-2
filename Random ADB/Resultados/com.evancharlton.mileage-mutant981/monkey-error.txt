@@ -1,0 +1,40 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 4077)
+// Short Msg: android.content.res.Resources$NotFoundException
+// Long Msg: android.content.res.Resources$NotFoundException: Resource ID #0x0
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// android.content.res.Resources$NotFoundException: Resource ID #0x0
+// 	at android.content.res.ResourcesImpl.getValue(ResourcesImpl.java:215)
+// 	at android.content.res.Resources.loadXmlResourceParser(Resources.java:2134)
+// 	at android.content.res.Resources.getLayout(Resources.java:1143)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:421)
+// 	at android.view.LayoutInflater.inflate(LayoutInflater.java:374)
+// 	at android.widget.Editor$SuggestionsPopupWindow.initContentView(Editor.java:3453)
+// 	at android.widget.Editor$PinnedPopupWindow.<init>(Editor.java:3135)
+// 	at android.widget.Editor$SuggestionsPopupWindow.<init>(Editor.java:3419)
+// 	at android.widget.Editor.replace(Editor.java:383)
+// 	at android.widget.Editor$3.run(Editor.java:2231)
+// 	at android.os.Handler.handleCallback(Handler.java:790)
+// 	at android.os.Handler.dispatchMessage(Handler.java:99)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 23756 of 1000000 using seed 1591705784383

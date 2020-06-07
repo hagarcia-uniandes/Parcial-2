@@ -1,0 +1,38 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 29806)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.ExceptionInInitializerError
+// 	at java.lang.Class.newInstance(Native Method)
+// 	at android.app.ActivityThread.installProvider(ActivityThread.java:6227)
+// 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:5805)
+// 	at android.app.ActivityThread.handleBindApplication(ActivityThread.java:5722)
+// 	at android.app.ActivityThread.-wrap1(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1656)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// Caused by: java.lang.NullPointerException: Attempt to invoke virtual method 'void com.evancharlton.mileage.provider.tables.ContentTable.registerUris()' on a null object reference
+// 	at com.evancharlton.mileage.provider.FillUpsProvider.<clinit>(FillUpsProvider.java:86)
+// 	... 12 more
+// 
+** System appears to have crashed at event 7 of 1000000 using seed 1591748742297

@@ -1,0 +1,24 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 8117)
+// Short Msg: java.lang.ArrayIndexOutOfBoundsException
+// Long Msg: java.lang.ArrayIndexOutOfBoundsException: length=28; index=28
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.ArrayIndexOutOfBoundsException: length=28; index=28
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter$1.run(VehicleStatisticsAdapter.java:100)
+// 
+** System appears to have crashed at event 158 of 1000000 using seed 1591744715947

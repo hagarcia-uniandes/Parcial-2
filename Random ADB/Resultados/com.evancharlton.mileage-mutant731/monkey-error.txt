@@ -1,0 +1,35 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 30888)
+// Short Msg: java.lang.VerifyError
+// Long Msg: java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.ServiceIntervalTemplateActivity: void com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields() failed to verify: void com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(): [0x71] wide register v6 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.ServiceIntervalTemplateActivity' appears in /data/app/com.evancharlton.mileage-g1OWfaDPDOPNpHEmKcywRg==/base.apk)
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.VerifyError: Verifier rejected class com.evancharlton.mileage.ServiceIntervalTemplateActivity: void com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields() failed to verify: void com.evancharlton.mileage.ServiceIntervalTemplateActivity.setFields(): [0x71] wide register v6 has type Long (Low Half)/Zero/null (declaration of 'com.evancharlton.mileage.ServiceIntervalTemplateActivity' appears in /data/app/com.evancharlton.mileage-g1OWfaDPDOPNpHEmKcywRg==/base.apk)
+// 	at java.lang.Class.newInstance(Native Method)
+// 	at android.app.Instrumentation.newActivity(Instrumentation.java:1174)
+// 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2669)
+// 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:2856)
+// 	at android.app.ActivityThread.-wrap11(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1589)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 265 of 1000000 using seed 1591474054323

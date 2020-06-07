@@ -1,0 +1,52 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 13093)
+// Short Msg: java.lang.IllegalArgumentException
+// Long Msg: java.lang.IllegalArgumentException: View=DecorView@50e5d2f[] not attached to window manager
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.IllegalArgumentException: View=DecorView@50e5d2f[] not attached to window manager
+// 	at android.view.WindowManagerGlobal.findViewLocked(WindowManagerGlobal.java:485)
+// 	at android.view.WindowManagerGlobal.removeView(WindowManagerGlobal.java:394)
+// 	at android.view.WindowManagerImpl.removeViewImmediate(WindowManagerImpl.java:124)
+// 	at android.app.Dialog.dismissDialog(Dialog.java:371)
+// 	at android.app.Dialog.dismiss(Dialog.java:354)
+// 	at com.evancharlton.mileage.views.DateButton.onSaveInstanceState(DateButton.java:63)
+// 	at android.view.View.dispatchSaveInstanceState(View.java:17614)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:3726)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:3726)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:3726)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:3726)
+// 	at android.view.ViewGroup.dispatchSaveInstanceState(ViewGroup.java:3726)
+// 	at android.view.View.saveHierarchyState(View.java:17597)
+// 	at com.android.internal.policy.PhoneWindow.saveHierarchyState(PhoneWindow.java:2096)
+// 	at android.app.Activity.onSaveInstanceState(Activity.java:1566)
+// 	at android.app.Activity.performSaveInstanceState(Activity.java:1496)
+// 	at android.app.Instrumentation.callActivityOnSaveInstanceState(Instrumentation.java:1386)
+// 	at android.app.ActivityThread.callCallActivityOnSaveInstanceState(ActivityThread.java:4721)
+// 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3875)
+// 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:3852)
+// 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:3826)
+// 	at android.app.ActivityThread.-wrap15(Unknown Source:0)
+// 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1601)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 26653 of 1000000 using seed 1591753785924

@@ -1,0 +1,36 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 27740)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List android.net.Uri.getPathSegments()' on a null object reference
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.NullPointerException: Attempt to invoke virtual method 'java.util.List android.net.Uri.getPathSegments()' on a null object reference
+// 	at android.content.UriMatcher.match(UriMatcher.java:219)
+// 	at com.evancharlton.mileage.provider.FillUpsProvider.delete(FillUpsProvider.java:155)
+// 	at android.content.ContentProvider$Transport.delete(ContentProvider.java:341)
+// 	at android.content.ContentResolver.delete(ContentResolver.java:1636)
+// 	at com.evancharlton.mileage.dao.Dao.delete(Dao.java:324)
+// 	at com.evancharlton.mileage.BaseFormActivity$3.onClick(BaseFormActivity.java:121)
+// 	at com.android.internal.app.AlertController$ButtonHandler.handleMessage(AlertController.java:166)
+// 	at android.os.Handler.dispatchMessage(Handler.java:106)
+// 	at android.os.Looper.loop(Looper.java:164)
+// 	at android.app.ActivityThread.main(ActivityThread.java:6494)
+// 	at java.lang.reflect.Method.invoke(Native Method)
+// 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:438)
+// 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:807)
+// 
+** System appears to have crashed at event 596 of 1000000 using seed 1591531088737

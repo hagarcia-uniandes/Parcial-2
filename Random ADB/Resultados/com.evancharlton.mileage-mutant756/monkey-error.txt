@@ -1,0 +1,305 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// NOT RESPONDING: com.evancharlton.mileage (pid 4898)
+ANR in com.evancharlton.mileage (com.evancharlton.mileage/.io.DbImportActivity)
+PID: 4898
+Reason: Input dispatching timed out (Waiting because no window has focus but there is a focused application that may eventually add a window when it finishes starting up.)
+Load: 1.36 / 1.74 / 1.96
+CPU usage from 299022ms to 0ms ago (2020-06-06 10:08:29.712 to 2020-06-06 10:13:28.735):
+  28% 1629/system_server: 18% user + 9.8% kernel / faults: 117407 minor 3 major
+  15% 1416/surfaceflinger: 4% user + 11% kernel / faults: 1402 minor
+  4.7% 8816/com.google.android.googlequicksearchbox:search: 3.7% user + 1% kernel / faults: 254874 minor 54 major
+  3.4% 1749/com.android.systemui: 2.2% user + 1.1% kernel / faults: 5705 minor
+  2.8% 1500/audioserver: 0.7% user + 2% kernel / faults: 51 minor
+  2.7% 1398/android.hardware.audio@2.0-service: 0.3% user + 2.4% kernel
+  2.4% 1407/android.hardware.graphics.composer@2.1-service: 0% user + 2.3% kernel / faults: 622 minor
+  2.3% 1729/com.google.android.inputmethod.latin: 1.7% user + 0.5% kernel / faults: 27801 minor 18 major
+  2% 2171/com.google.android.apps.nexuslauncher: 1.2% user + 0.7% kernel / faults: 25581 minor
+  1.8% 8730/com.google.android.gms.persistent: 1.3% user + 0.5% kernel / faults: 9909 minor 8 major
+  1.7% 2066/adbd: 0% user + 1.6% kernel / faults: 30273 minor
+  0.9% 1345/logd: 0.2% user + 0.7% kernel / faults: 34 minor
+  0.6% 20966/com.android.systemui:screenshot: 0.4% user + 0.1% kernel / faults: 40407 minor
+  0.5% 1409/android.hardware.sensors@1.0-service: 0% user + 0.5% kernel
+  0.5% 1420/logcat: 0% user + 0.5% kernel / faults: 2 minor
+  0.3% 9924/com.google.android.gms: 0.2% user + 0.1% kernel / faults: 4385 minor 8 major
+  0.3% 1408/android.hardware.power@1.0-service: 0% user + 0.3% kernel
+  0.2% 4895/com.google.android.apps.photos: 0.2% user + 0% kernel / faults: 5361 minor
+  0.2% 7098/com.google.process.gapps: 0.1% user + 0% kernel / faults: 1183 minor
+  0.1% 4649/android.process.media: 0.1% user + 0% kernel / faults: 2409 minor
+  0.1% 1406/android.hardware.graphics.allocator@2.0-service: 0% user + 0.1% kernel / faults: 621 minor
+  0.1% 2355/kworker/u5:1: 0% user + 0.1% kernel
+  0.1% 4162/kworker/u5:0: 0% user + 0.1% kernel
+  0% 7/rcu_preempt: 0% user + 0% kernel
+  0% 1493/jbd2/dm-0-8: 0% user + 0% kernel
+  0% 1483/dmcrypt_write: 0% user + 0% kernel
+  0% 3/ksoftirqd/0: 0% user + 0% kernel
+  0% 27388/com.android.vending: 0% user + 0% kernel / faults: 759 minor 2 major
+  0% 1415/lmkd: 0% user + 0% kernel
+  0% 1846/com.android.phone: 0% user + 0% kernel / faults: 121 minor
+  0% 1346/servicemanager: 0% user + 0% kernel
+  0% 1405/android.hardware.gnss@1.0-service: 0% user + 0% kernel
+  0% 1470/kworker/0:1H: 0% user + 0% kernel
+  0% 531/kswapd0: 0% user + 0% kernel
+  0% 10/migration/0: 0% user + 0% kernel
+  0% 1503/installd: 0% user + 0% kernel / faults: 160 minor
+  0% 2522/kworker/u4:1: 0% user + 0% kernel
+  0% 1339/kworker/1:1H: 0% user + 0% kernel
+  0% 1769/webview_zygote32: 0% user + 0% kernel / faults: 499 minor
+  0% 27321/com.android.defcontainer: 0% user + 0% kernel / faults: 143 minor
+  0% 12/ksoftirqd/1: 0% user + 0% kernel
+  0% 1347/hwservicemanager: 0% user + 0% kernel / faults: 152 minor
+  0% 27343/com.android.documentsui: 0% user + 0% kernel / faults: 60 minor
+  0% 1//init: 0% user + 0% kernel
+  0% 11/migration/1: 0% user + 0% kernel
+  0% 1411/healthd: 0% user + 0% kernel
+  0% 1499/zygote: 0% user + 0% kernel / faults: 535 minor
+  0% 1918/com.google.android.partnersetup: 0% user + 0% kernel / faults: 64 minor 3 major
+  0% 2667/com.android.providers.calendar: 0% user + 0% kernel / faults: 72 minor
+  0% 3057/com.google.android.apps.docs: 0% user + 0% kernel / faults: 86 minor
+  0% 4020/kworker/1:1: 0% user + 0% kernel
+  0% 27334/com.android.keychain: 0% user + 0% kernel / faults: 73 minor
+ +0% 4530/kworker/0:0: 0% user + 0% kernel
+ +0% 4744/kworker/u5:2: 0% user + 0% kernel
+ +0% 4886/com.android.commands.monkey: 0% user + 0% kernel
+ +0% 4898/com.evancharlton.mileage: 0% user + 0% kernel
+ +0% 4958/com.android.chrome:sandboxed: 0% user + 0% kernel
+47% TOTAL: 24% user + 21% kernel + 0% iowait + 0% irq + 0.5% softirq
+CPU usage from 13ms to 301ms later (2020-06-06 10:13:28.748 to 2020-06-06 10:13:29.036):
+  29% 1629/system_server: 25% user + 3.6% kernel / faults: 287 minor
+    22% 1643/ActivityManager: 22% user + 0% kernel
+    3.6% 1672/android.anim: 0% user + 3.6% kernel
+  14% 1416/surfaceflinger: 10% user + 3.5% kernel
+    10% 1416/surfaceflinger: 3.5% user + 7.1% kernel
+  3.5% 1407/android.hardware.graphics.composer@2.1-service: 0% user + 3.5% kernel / faults: 1 minor
+17% TOTAL: 17% user + 0% kernel
+
+procrank:
+// Exception from procrank:
+java.io.IOException: Cannot run program "procrank": error=13, Permission denied
+anr traces:
+// anr traces status was 1
+meminfo:
+Applications Memory Usage (in Kilobytes):
+Uptime: 34550725 Realtime: 34550725
+
+Total PSS by process:
+    154,805K: com.google.android.googlequicksearchbox:search (pid 8816)
+    105,948K: system (pid 1629)
+     97,313K: com.android.systemui (pid 1749)
+     83,735K: com.google.android.apps.nexuslauncher (pid 2171 / activities)
+     77,454K: com.google.android.inputmethod.latin (pid 1729)
+     57,137K: com.evancharlton.mileage (pid 4898 / activities)
+     49,223K: com.google.android.gms.persistent (pid 8730)
+     41,328K: com.google.android.gms (pid 9924)
+     27,936K: com.google.android.apps.docs (pid 3057)
+     23,498K: com.android.vending (pid 27388)
+     20,245K: com.google.android.apps.photos (pid 4895)
+     17,700K: com.android.commands.monkey (pid 4886)
+     16,467K: com.android.phone (pid 1846)
+     14,822K: com.android.systemui:screenshot (pid 20966)
+     13,585K: android.process.media (pid 4649)
+     10,249K: logd (pid 1345)
+     10,218K: webview_zygote32 (pid 1769)
+      9,746K: com.google.android.googlequicksearchbox:interactor (pid 4025)
+      8,429K: com.google.android.setupwizard (pid 23840)
+      7,483K: com.android.chrome (pid 11902)
+      6,998K: com.android.documentsui (pid 27343)
+      5,835K: surfaceflinger (pid 1416)
+      5,160K: com.google.process.gservices (pid 26921)
+      5,091K: com.google.process.gapps (pid 7098)
+      5,039K: com.android.providers.calendar (pid 2667)
+      4,958K: com.android.defcontainer (pid 27321)
+      4,930K: com.google.android.partnersetup (pid 1918)
+      4,834K: zygote (pid 1499)
+      4,385K: com.android.keychain (pid 27334)
+      4,035K: media.extractor (pid 5011)
+      3,991K: mediaserver (pid 1508)
+      3,304K: audioserver (pid 1500)
+      3,057K: media.codec (pid 5013)
+      2,216K: cameraserver (pid 1501)
+      1,987K: drmserver (pid 1502)
+      1,917K: media.metrics (pid 1507)
+      1,581K: android.hardware.graphics.composer@2.1-service (pid 1407)
+      1,531K: /init (pid 1)
+      1,487K: netd (pid 1509)
+      1,424K: installd (pid 1503)
+      1,313K: android.hardware.audio@2.0-service (pid 1398)
+      1,288K: vold (pid 1355)
+      1,288K: android.hardware.camera.provider@2.4-service (pid 1399)
+      1,136K: ueventd (pid 1051)
+      1,067K: keystore (pid 1504)
+      1,018K: adbd (pid 2066)
+      1,002K: mediadrmserver (pid 1505)
+        985K: hwservicemanager (pid 1347)
+        950K: rild (pid 1513)
+        867K: android.hardware.drm@1.0-service (pid 1402)
+        848K: storaged (pid 1510)
+        791K: android.hardware.gnss@1.0-service (pid 1405)
+        778K: wificond (pid 1511)
+        769K: android.hardware.keymaster@3.0-service (pid 1354)
+        767K: android.hardware.graphics.allocator@2.0-service (pid 1406)
+        756K: android.hardware.wifi@1.0-service (pid 1410)
+        727K: android.hardware.drm@1.0-service.widevine (pid 1403)
+        720K: gatekeeperd (pid 1515)
+        707K: ip6tables-restore (pid 1530)
+        667K: android.hardware.sensors@1.0-service (pid 1409)
+        663K: iptables-restore (pid 1529)
+        648K: dumpsys (pid 5027)
+        646K: thermalserviced (pid 1417)
+        645K: android.hardware.configstore@1.0-service (pid 1401)
+        643K: android.hardware.gatekeeper@1.0-service (pid 1404)
+        634K: healthd (pid 1411)
+        616K: servicemanager (pid 1346)
+        609K: android.hardware.cas@1.0-service (pid 1400)
+        587K: hostapd (pid 1622)
+        572K: android.hardware.biometrics.fingerprint@2.1-service (pid 1517)
+        566K: android.hidl.allocator@1.0-service (pid 1397)
+        562K: lmkd (pid 1415)
+        558K: android.hardware.power@1.0-service (pid 1408)
+        543K: logcat (pid 1420)
+        509K: tombstoned (pid 1516)
+        496K: vndservicemanager (pid 1348)
+        423K: sleep (pid 1608)
+        417K: sh (pid 1607)
+        371K: ipv6proxy (pid 1619)
+        357K: qemu-props (pid 1413)
+        353K: misc-pipe (pid 1414)
+        346K: dhcpserver (pid 1624)
+        345K: dhcpclient (pid 1604)
+        312K: mdnsd (pid 2073)
+
+Total PSS by OOM adjustment:
+    106,231K: Native
+         17,700K: com.android.commands.monkey (pid 4886)
+         10,249K: logd (pid 1345)
+         10,218K: webview_zygote32 (pid 1769)
+          5,835K: surfaceflinger (pid 1416)
+          4,834K: zygote (pid 1499)
+          4,035K: media.extractor (pid 5011)
+          3,991K: mediaserver (pid 1508)
+          3,304K: audioserver (pid 1500)
+          3,057K: media.codec (pid 5013)
+          2,216K: cameraserver (pid 1501)
+          1,987K: drmserver (pid 1502)
+          1,917K: media.metrics (pid 1507)
+          1,581K: android.hardware.graphics.composer@2.1-service (pid 1407)
+          1,531K: /init (pid 1)
+          1,487K: netd (pid 1509)
+          1,424K: installd (pid 1503)
+          1,313K: android.hardware.audio@2.0-service (pid 1398)
+          1,288K: vold (pid 1355)
+          1,288K: android.hardware.camera.provider@2.4-service (pid 1399)
+          1,136K: ueventd (pid 1051)
+          1,067K: keystore (pid 1504)
+          1,018K: adbd (pid 2066)
+          1,002K: mediadrmserver (pid 1505)
+            985K: hwservicemanager (pid 1347)
+            950K: rild (pid 1513)
+            867K: android.hardware.drm@1.0-service (pid 1402)
+            848K: storaged (pid 1510)
+            791K: android.hardware.gnss@1.0-service (pid 1405)
+            778K: wificond (pid 1511)
+            769K: android.hardware.keymaster@3.0-service (pid 1354)
+            767K: android.hardware.graphics.allocator@2.0-service (pid 1406)
+            756K: android.hardware.wifi@1.0-service (pid 1410)
+            727K: android.hardware.drm@1.0-service.widevine (pid 1403)
+            720K: gatekeeperd (pid 1515)
+            707K: ip6tables-restore (pid 1530)
+            667K: android.hardware.sensors@1.0-service (pid 1409)
+            663K: iptables-restore (pid 1529)
+            648K: dumpsys (pid 5027)
+            646K: thermalserviced (pid 1417)
+            645K: android.hardware.configstore@1.0-service (pid 1401)
+            643K: android.hardware.gatekeeper@1.0-service (pid 1404)
+            634K: healthd (pid 1411)
+            616K: servicemanager (pid 1346)
+            609K: android.hardware.cas@1.0-service (pid 1400)
+            587K: hostapd (pid 1622)
+            572K: android.hardware.biometrics.fingerprint@2.1-service (pid 1517)
+            566K: android.hidl.allocator@1.0-service (pid 1397)
+            562K: lmkd (pid 1415)
+            558K: android.hardware.power@1.0-service (pid 1408)
+            543K: logcat (pid 1420)
+            509K: tombstoned (pid 1516)
+            496K: vndservicemanager (pid 1348)
+            423K: sleep (pid 1608)
+            417K: sh (pid 1607)
+            371K: ipv6proxy (pid 1619)
+            357K: qemu-props (pid 1413)
+            353K: misc-pipe (pid 1414)
+            346K: dhcpserver (pid 1624)
+            345K: dhcpclient (pid 1604)
+            312K: mdnsd (pid 2073)
+    105,948K: System
+        105,948K: system (pid 1629)
+    113,780K: Persistent
+         97,313K: com.android.systemui (pid 1749)
+         16,467K: com.android.phone (pid 1846)
+     57,137K: Foreground
+         57,137K: com.evancharlton.mileage (pid 4898 / activities)
+    184,032K: Visible
+         83,735K: com.google.android.apps.nexuslauncher (pid 2171 / activities)
+         49,223K: com.google.android.gms.persistent (pid 8730)
+         41,328K: com.google.android.gms (pid 9924)
+          9,746K: com.google.android.googlequicksearchbox:interactor (pid 4025)
+     77,454K: Perceptible
+         77,454K: com.google.android.inputmethod.latin (pid 1729)
+     18,676K: Previous
+         13,585K: android.process.media (pid 4649)
+          5,091K: com.google.process.gapps (pid 7098)
+    288,688K: Cached
+        154,805K: com.google.android.googlequicksearchbox:search (pid 8816)
+         27,936K: com.google.android.apps.docs (pid 3057)
+         23,498K: com.android.vending (pid 27388)
+         20,245K: com.google.android.apps.photos (pid 4895)
+         14,822K: com.android.systemui:screenshot (pid 20966)
+          8,429K: com.google.android.setupwizard (pid 23840)
+          7,483K: com.android.chrome (pid 11902)
+          6,998K: com.android.documentsui (pid 27343)
+          5,160K: com.google.process.gservices (pid 26921)
+          5,039K: com.android.providers.calendar (pid 2667)
+          4,958K: com.android.defcontainer (pid 27321)
+          4,930K: com.google.android.partnersetup (pid 1918)
+          4,385K: com.android.keychain (pid 27334)
+
+Total PSS by category:
+    332,860K: Native
+    137,614K: Dalvik
+    114,430K: .dex mmap
+     76,870K: .so mmap
+     74,703K: .apk mmap
+     58,310K: Dalvik Other
+     38,658K: .art mmap
+     30,456K: .oat mmap
+     29,515K: Ashmem
+     24,070K: Unknown
+     15,240K: Stack
+     14,087K: Other mmap
+      3,475K: .ttf mmap
+      1,474K: Other dev
+        180K: .jar mmap
+          4K: Cursor
+          0K: Gfx dev
+          0K: EGL mtrack
+          0K: GL mtrack
+          0K: Other mtrack
+
+Total RAM: 1,548,716K (status normal)
+ Free RAM:   745,768K (  288,688K cached pss +   143,828K cached kernel +   313,252K free)
+ Used RAM:   749,206K (  663,258K used pss +    85,948K kernel)
+ Lost RAM:    53,742K
+   Tuning: 384 (large 384), oom   184,320K, restore limit    61,440K (high-end-gfx)
+// meminfo status was 0
+** System appears to have crashed at event 1121 of 1000000 using seed 1591522937130

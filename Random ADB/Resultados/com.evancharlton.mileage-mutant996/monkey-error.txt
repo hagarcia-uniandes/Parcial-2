@@ -1,0 +1,32 @@
+args: [-p, com.evancharlton.mileage, --pct-appswitch, 1, --pct-syskeys, 0, -v, 1000000]
+ arg: "-p"
+ arg: "com.evancharlton.mileage"
+ arg: "--pct-appswitch"
+ arg: "1"
+ arg: "--pct-syskeys"
+ arg: "0"
+ arg: "-v"
+ arg: "1000000"
+data="com.evancharlton.mileage"
+arg="--pct-appswitch" mCurArgData="null" mNextArg=3 argwas="--pct-appswitch" nextarg="1"
+data="1"
+arg="--pct-syskeys" mCurArgData="null" mNextArg=5 argwas="--pct-syskeys" nextarg="0"
+data="0"
+// CRASH: com.evancharlton.mileage (pid 6030)
+// Short Msg: java.lang.NullPointerException
+// Long Msg: java.lang.NullPointerException: uri
+// Build Label: google/sdk_gphone_x86/generic_x86:8.1.0/OSM1.180201.007/4586646:user/release-keys
+// Build Changelist: 4586646
+// Build Time: 1517878968000
+// java.lang.NullPointerException: uri
+// 	at com.android.internal.util.Preconditions.checkNotNull(Preconditions.java:128)
+// 	at android.content.ContentResolver.notifyChange(ContentResolver.java:1996)
+// 	at android.content.ContentResolver.notifyChange(ContentResolver.java:1967)
+// 	at com.evancharlton.mileage.provider.FillUpsProvider.notifyListeners(FillUpsProvider.java:268)
+// 	at com.evancharlton.mileage.provider.FillUpsProvider.insert(FillUpsProvider.java:200)
+// 	at android.content.ContentProvider.bulkInsert(ContentProvider.java:1304)
+// 	at android.content.ContentProvider$Transport.bulkInsert(ContentProvider.java:280)
+// 	at android.content.ContentResolver.bulkInsert(ContentResolver.java:1604)
+// 	at com.evancharlton.mileage.adapters.VehicleStatisticsAdapter$1.run(VehicleStatisticsAdapter.java:108)
+// 
+** System appears to have crashed at event 56620 of 1000000 using seed 1591540839552

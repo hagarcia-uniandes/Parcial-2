@@ -1,0 +1,58 @@
+  bash arg: -p
+  bash arg: com.evancharlton.mileage
+  bash arg: --pct-appswitch
+  bash arg: 1
+  bash arg: --pct-syskeys
+  bash arg: 0
+  bash arg: -v
+  bash arg: 1000000
+:Monkey: seed=1591745902225 count=1000000
+:AllowPackage: com.evancharlton.mileage
+:IncludeCategory: android.intent.category.LAUNCHER
+:IncludeCategory: android.intent.category.MONKEY
+// Event percentages:
+//   0: 15.46875%
+//   1: 10.3125%
+//   2: 2.0625%
+//   3: 15.46875%
+//   4: -0.0%
+//   5: -0.0%
+//   6: 25.78125%
+//   7: 15.46875%
+//   8: -0.0%
+//   9: 1.0%
+//   10: 1.03125%
+//   11: 13.40625%
+:Switch: #Intent;action=android.intent.action.MAIN;category=android.intent.category.LAUNCHER;launchFlags=0x10200000;component=com.evancharlton.mileage/.Mileage;end
+    // Allowing start of Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.evancharlton.mileage/.Mileage } in package com.evancharlton.mileage
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+    // Rejecting start of Intent { act=android.intent.action.VIEW dat=market://search?c=apps&pcampaignid=nxl_search_12613299&q=A pkg=com.android.vending cmp=com.android.vending/com.google.android.finsky.activities.MainActivity } in package com.android.vending
+:Sending Touch (ACTION_DOWN): 0:(794.0,1873.0)
+:Sending Touch (ACTION_UP): 0:(776.6839,1873.6595)
+:Sending Touch (ACTION_DOWN): 0:(425.0,1279.0)
+:Sending Touch (ACTION_UP): 0:(425.2247,1278.7136)
+:Sending Touch (ACTION_DOWN): 0:(215.0,757.0)
+:Sending Touch (ACTION_UP): 0:(212.74072,773.8336)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,-2.0)
+:Sending Trackball (ACTION_UP): 0:(0.0,0.0)
+:Sending Touch (ACTION_DOWN): 0:(1002.0,1427.0)
+:Sending Touch (ACTION_UP): 0:(1010.33545,1441.9535)
+:Sending Trackball (ACTION_MOVE): 0:(-3.0,-4.0)
+:Sending Trackball (ACTION_MOVE): 0:(2.0,3.0)
+:Sending Touch (ACTION_DOWN): 0:(542.0,220.0)
+:Sending Touch (ACTION_UP): 0:(541.9431,219.28563)
+:Sending Touch (ACTION_DOWN): 0:(1023.0,359.0)
+:Sending Touch (ACTION_UP): 0:(984.3158,395.36978)
+:Sending Trackball (ACTION_MOVE): 0:(-5.0,-3.0)
+:Sending Trackball (ACTION_MOVE): 0:(0.0,2.0)
+    //[calendar_time:2020-06-07 02:49:16.948  system_uptime:708666]
+    // Sending event #100
+:Sending Touch (ACTION_DOWN): 0:(974.0,210.0)
+:Sending Touch (ACTION_UP): 0:(974.111,218.52391)
+:Sending Touch (ACTION_DOWN): 0:(992.0,84.0)
+:Sending Touch (ACTION_UP): 0:(951.52875,124.268555)
+** Monkey aborted due to error.
+Events injected: 110
+:Sending rotation degree=0, persist=false
+:Dropped: keys=0 pointers=0 trackballs=0 flips=0 rotations=0
+## Network stats: elapsed time=1296ms (0ms mobile, 0ms wifi, 1296ms not connected)
